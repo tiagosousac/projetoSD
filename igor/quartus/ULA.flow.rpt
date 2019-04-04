@@ -1,6 +1,6 @@
 Flow report for ULA
-Thu Apr 04 14:06:03 2019
-Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Thu Apr 04 16:53:54 2019
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -35,28 +35,28 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+-------------------------------+-----------------------------------------------+
-; Flow Status                   ; Successful - Thu Apr 04 14:06:03 2019         ;
-; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
-; Revision Name                 ; ULA                                           ;
-; Top-level Entity Name         ; menorque                                      ;
-; Family                        ; Stratix II                                    ;
-; Met timing requirements       ; Yes                                           ;
-; Logic utilization             ; < 1 %                                         ;
-;     Combinational ALUTs       ; 2 / 12,480 ( < 1 % )                          ;
-;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                            ;
-; Total registers               ; 0                                             ;
-; Total pins                    ; 9 / 343 ( 3 % )                               ;
-; Total virtual pins            ; 0                                             ;
-; Total block memory bits       ; 0 / 419,328 ( 0 % )                           ;
-; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                                ;
-; Total PLLs                    ; 0 / 6 ( 0 % )                                 ;
-; Total DLLs                    ; 0 / 2 ( 0 % )                                 ;
-; Device                        ; EP2S15F484C3                                  ;
-; Timing Models                 ; Final                                         ;
-+-------------------------------+-----------------------------------------------+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++-------------------------------+----------------------------------------------+
+; Flow Status                   ; Successful - Thu Apr 04 16:53:54 2019        ;
+; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                 ; ULA                                          ;
+; Top-level Entity Name         ; somadorbcd                                   ;
+; Family                        ; Stratix II                                   ;
+; Met timing requirements       ; Yes                                          ;
+; Logic utilization             ; < 1 %                                        ;
+;     Combinational ALUTs       ; 11 / 12,480 ( < 1 % )                        ;
+;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                           ;
+; Total registers               ; 0                                            ;
+; Total pins                    ; 13 / 343 ( 4 % )                             ;
+; Total virtual pins            ; 0                                            ;
+; Total block memory bits       ; 0 / 419,328 ( 0 % )                          ;
+; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                               ;
+; Total PLLs                    ; 0 / 6 ( 0 % )                                ;
+; Total DLLs                    ; 0 / 2 ( 0 % )                                ;
+; Device                        ; EP2S15F484C3                                 ;
+; Timing Models                 ; Final                                        ;
++-------------------------------+----------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,23 +64,23 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/04/2019 14:05:56 ;
+; Start date & time ; 04/04/2019 16:53:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ULA                 ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                    ;
-+------------------------------------+---------------------------------+---------------+-------------+----------------+
-; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
-+------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 229335799398863.155439755602936 ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                        ; --            ; menorque    ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; menorque    ; Top            ;
-; TOP_LEVEL_ENTITY                   ; menorque                        ; ULA           ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --            ; --          ; eda_blast_fpga ;
-+------------------------------------+---------------------------------+---------------+-------------+----------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                   ;
++------------------------------------+--------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+--------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 10995770589202.155440761901668 ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                       ; --            ; somadorbcd  ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; somadorbcd  ; Top            ;
+; TOP_LEVEL_ENTITY                   ; somadorbcd                     ; ULA           ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+--------------------------------+---------------+-------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -88,11 +88,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 340 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:03     ; 1.0                     ; 517 MB              ; 00:00:03                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 338 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 267 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:05     ; --                      ; --                  ; 00:00:05                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 277 MB              ; 00:00:01                           ;
+; Fitter                  ; 00:00:06     ; 2.5                     ; 408 MB              ; 00:00:05                           ;
+; Assembler               ; 00:00:03     ; 1.0                     ; 293 MB              ; 00:00:02                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 223 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:10     ; --                      ; --                  ; 00:00:08                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -101,10 +101,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; g3c26            ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; g3c26            ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; g3c26            ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; g3c26            ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; g1c25            ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; g1c25            ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; g1c25            ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; g1c25            ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 

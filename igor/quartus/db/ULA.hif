@@ -1,5 +1,5 @@
-Quartus II 64-Bit
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 7
 3700
 OFF
@@ -20,18 +20,21 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-somador_subtracter
+somadorbcd
 # storage
 db|ULA.(0).cnf
 db|ULA.(0).cnf
 # case_insensitive
 # source_file
-somador_subtracter.bdf
-7a9c79c44b39d199661b7219f3eb875b
+somadorbcd.bdf
+9f83eed76ed9262048ec87cae790a3a2
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 
@@ -51,152 +54,12 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst2
-maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst
-maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst3
-maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst4
-maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst8
-maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst7
-maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst
-maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst9
-}
-# macro_sequence
-
-# end
-# entity
-mux2
-# storage
-db|ULA.(2).cnf
-db|ULA.(2).cnf
-# case_insensitive
-# source_file
-mux2.bdf
-bf4f2fd288f08cf5c376e2c183688c31
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-maiorque
-# storage
-db|ULA.(3).cnf
-db|ULA.(3).cnf
-# case_insensitive
-# source_file
-maiorque.bdf
-a3f99d236d7f747eb5a565f0d5f142c
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-maiorque:inst3
-}
-# macro_sequence
-
-# end
-# entity
-fulladder
-# storage
-db|ULA.(5).cnf
-db|ULA.(5).cnf
-# case_insensitive
-# source_file
-fulladder.bdf
-533971db763f1c5a8c14ced6d5bc73e
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-maiorque:inst3|subtracter:inst1|fulladder:inst2
-}
-# macro_sequence
-
-# end
-# entity
-igual
-# storage
-db|ULA.(7).cnf
-db|ULA.(7).cnf
-# case_insensitive
-# source_file
-igual.bdf
-8f9bc0d9c53fbeb2d12ef39f256a7e
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-maiorque:inst3|igual:inst18
-igual:inst1
-}
-# macro_sequence
-
-# end
-# entity
-subtracter
-# storage
-db|ULA.(4).cnf
-db|ULA.(4).cnf
-# case_insensitive
-# source_file
-subtracter.bdf
-288545659ebc8fed1f41f33ffdbd2148
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-maiorque:inst3|subtracter:inst1
-}
-# macro_sequence
-
-# end
-# entity
-c2b
-# storage
-db|ULA.(6).cnf
-db|ULA.(6).cnf
-# case_insensitive
-# source_file
-c2b.bdf
-0cfd4a803d632edcedd9aeca864862
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-maiorque:inst3|subtracter:inst1|c2b:inst
-}
-# macro_sequence
-
-# end
-# entity
-menorque
-# storage
-db|ULA.(8).cnf
-db|ULA.(8).cnf
-# case_insensitive
-# source_file
-menorque.bdf
-9856ed3aa1db6298893644cec64c1e9
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
+adder:inst
+adder:inst2
+adder:inst3
+adder:inst1
+adder:inst4
+adder:inst9
 }
 # macro_sequence
 

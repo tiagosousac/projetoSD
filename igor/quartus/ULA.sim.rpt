@@ -1,6 +1,6 @@
 Simulator report for ULA
-Thu Apr 04 14:06:55 2019
-Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Thu Apr 04 16:56:02 2019
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -47,7 +47,7 @@ applicable agreement for further details.
 ; Simulation End Time         ; 1.0 us       ;
 ; Simulation Netlist Size     ; 45 nodes     ;
 ; Simulation Coverage         ;     100.00 % ;
-; Total Number of Transitions ; 17537        ;
+; Total Number of Transitions ; 28010        ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
@@ -61,7 +61,7 @@ applicable agreement for further details.
 ; Simulation mode                                                                            ; Functional ; Timing        ;
 ; Start time                                                                                 ; 0 ns       ; 0 ns          ;
 ; Simulation results format                                                                  ; CVWF       ;               ;
-; Vector input source                                                                        ; ULA.vwf    ;               ;
+; Vector input source                                                                        ; A.vwf      ;               ;
 ; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
 ; Check outputs                                                                              ; Off        ; Off           ;
 ; Report simulation coverage                                                                 ; On         ; On            ;
@@ -77,7 +77,7 @@ applicable agreement for further details.
 ; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
 ; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
 ; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
 ; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
 +--------------------------------------------------------------------------------------------+------------+---------------+
 
@@ -86,7 +86,7 @@ applicable agreement for further details.
 ; Simulation Waveforms ;
 +----------------------+
 Waveform report data cannot be output to ASCII.
-Please use Quartus II 64-Bit to view the waveform report data.
+Please use Quartus II to view the waveform report data.
 
 
 +--------------------------------------------------------------------+
@@ -105,57 +105,57 @@ Please use Quartus II 64-Bit to view the waveform report data.
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                                                                  ;
-+-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
-; Node Name                                                                   ; Output Port Name                                                            ; Output Port Type ;
-+-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
-; |menorque|R                                                                 ; |menorque|R                                                                 ; pin_out          ;
-; |menorque|inst2                                                             ; |menorque|inst2                                                             ; out0             ;
-; |menorque|A[3]                                                              ; |menorque|A[3]                                                              ; out              ;
-; |menorque|A[2]                                                              ; |menorque|A[2]                                                              ; out              ;
-; |menorque|A[1]                                                              ; |menorque|A[1]                                                              ; out              ;
-; |menorque|A[0]                                                              ; |menorque|A[0]                                                              ; out              ;
-; |menorque|B[3]                                                              ; |menorque|B[3]                                                              ; out              ;
-; |menorque|B[2]                                                              ; |menorque|B[2]                                                              ; out              ;
-; |menorque|B[1]                                                              ; |menorque|B[1]                                                              ; out              ;
-; |menorque|B[0]                                                              ; |menorque|B[0]                                                              ; out              ;
-; |menorque|igual:inst1|inst12                                                ; |menorque|igual:inst1|inst12                                                ; out0             ;
-; |menorque|igual:inst1|inst7                                                 ; |menorque|igual:inst1|inst7                                                 ; out0             ;
-; |menorque|igual:inst1|inst6                                                 ; |menorque|igual:inst1|inst6                                                 ; out0             ;
-; |menorque|igual:inst1|inst5                                                 ; |menorque|igual:inst1|inst5                                                 ; out0             ;
-; |menorque|igual:inst1|inst                                                  ; |menorque|igual:inst1|inst                                                  ; out0             ;
-; |menorque|maiorque:inst3|inst19                                             ; |menorque|maiorque:inst3|inst19                                             ; out0             ;
-; |menorque|maiorque:inst3|inst16                                             ; |menorque|maiorque:inst3|inst16                                             ; out0             ;
-; |menorque|maiorque:inst3|inst15                                             ; |menorque|maiorque:inst3|inst15                                             ; out0             ;
-; |menorque|maiorque:inst3|instpositivo                                       ; |menorque|maiorque:inst3|instpositivo                                       ; out0             ;
-; |menorque|maiorque:inst3|inst                                               ; |menorque|maiorque:inst3|inst                                               ; out0             ;
-; |menorque|maiorque:inst3|inst21                                             ; |menorque|maiorque:inst3|inst21                                             ; out0             ;
-; |menorque|maiorque:inst3|inst4                                              ; |menorque|maiorque:inst3|inst4                                              ; out0             ;
-; |menorque|maiorque:inst3|inst12                                             ; |menorque|maiorque:inst3|inst12                                             ; out0             ;
-; |menorque|maiorque:inst3|instnegativo                                       ; |menorque|maiorque:inst3|instnegativo                                       ; out0             ;
-; |menorque|maiorque:inst3|igual:inst18|inst12                                ; |menorque|maiorque:inst3|igual:inst18|inst12                                ; out0             ;
-; |menorque|maiorque:inst3|igual:inst18|inst7                                 ; |menorque|maiorque:inst3|igual:inst18|inst7                                 ; out0             ;
-; |menorque|maiorque:inst3|igual:inst18|inst6                                 ; |menorque|maiorque:inst3|igual:inst18|inst6                                 ; out0             ;
-; |menorque|maiorque:inst3|igual:inst18|inst5                                 ; |menorque|maiorque:inst3|igual:inst18|inst5                                 ; out0             ;
-; |menorque|maiorque:inst3|igual:inst18|inst                                  ; |menorque|maiorque:inst3|igual:inst18|inst                                  ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst9|inst6        ; |menorque|maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst9|inst6        ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst7|inst6        ; |menorque|maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst7|inst6        ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst7|inst         ; |menorque|maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst7|inst         ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst8|inst6        ; |menorque|maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst8|inst6        ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst8|inst         ; |menorque|maiorque:inst3|subtracter:inst1|c2b:inst|adder:inst8|inst         ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst4|inst3 ; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst4|inst3 ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst3|inst7 ; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst3|inst7 ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst3|inst3 ; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst3|inst3 ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst3|inst4 ; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst3|inst4 ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst3|inst  ; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst3|inst  ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst|inst7  ; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst|inst7  ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst|inst3  ; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst|inst3  ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst|inst4  ; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst|inst4  ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst|inst   ; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst|inst   ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst2|inst5 ; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst2|inst5 ; out0             ;
-; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst2|inst6 ; |menorque|maiorque:inst3|subtracter:inst1|fulladder:inst2|adder:inst2|inst6 ; out0             ;
-+-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+
++----------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                      ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |somadorbcd|Cout              ; |somadorbcd|Cout              ; pin_out          ;
+; |somadorbcd|inst6             ; |somadorbcd|inst6             ; out0             ;
+; |somadorbcd|inst7             ; |somadorbcd|inst7             ; out0             ;
+; |somadorbcd|A[3]              ; |somadorbcd|A[3]              ; out              ;
+; |somadorbcd|A[2]              ; |somadorbcd|A[2]              ; out              ;
+; |somadorbcd|A[1]              ; |somadorbcd|A[1]              ; out              ;
+; |somadorbcd|A[0]              ; |somadorbcd|A[0]              ; out              ;
+; |somadorbcd|B[3]              ; |somadorbcd|B[3]              ; out              ;
+; |somadorbcd|B[2]              ; |somadorbcd|B[2]              ; out              ;
+; |somadorbcd|B[1]              ; |somadorbcd|B[1]              ; out              ;
+; |somadorbcd|B[0]              ; |somadorbcd|B[0]              ; out              ;
+; |somadorbcd|inst8             ; |somadorbcd|inst8             ; out0             ;
+; |somadorbcd|S[3]              ; |somadorbcd|S[3]              ; pin_out          ;
+; |somadorbcd|S[2]              ; |somadorbcd|S[2]              ; pin_out          ;
+; |somadorbcd|S[1]              ; |somadorbcd|S[1]              ; pin_out          ;
+; |somadorbcd|S[0]              ; |somadorbcd|S[0]              ; pin_out          ;
+; |somadorbcd|inst12            ; |somadorbcd|inst12            ; out0             ;
+; |somadorbcd|adder:inst9|inst5 ; |somadorbcd|adder:inst9|inst5 ; out0             ;
+; |somadorbcd|adder:inst9|inst6 ; |somadorbcd|adder:inst9|inst6 ; out0             ;
+; |somadorbcd|adder:inst9|inst7 ; |somadorbcd|adder:inst9|inst7 ; out0             ;
+; |somadorbcd|adder:inst9|inst3 ; |somadorbcd|adder:inst9|inst3 ; out0             ;
+; |somadorbcd|adder:inst9|inst4 ; |somadorbcd|adder:inst9|inst4 ; out0             ;
+; |somadorbcd|adder:inst9|inst  ; |somadorbcd|adder:inst9|inst  ; out0             ;
+; |somadorbcd|adder:inst4|inst5 ; |somadorbcd|adder:inst4|inst5 ; out0             ;
+; |somadorbcd|adder:inst4|inst3 ; |somadorbcd|adder:inst4|inst3 ; out0             ;
+; |somadorbcd|adder:inst1|inst5 ; |somadorbcd|adder:inst1|inst5 ; out0             ;
+; |somadorbcd|adder:inst1|inst3 ; |somadorbcd|adder:inst1|inst3 ; out0             ;
+; |somadorbcd|adder:inst3|inst5 ; |somadorbcd|adder:inst3|inst5 ; out0             ;
+; |somadorbcd|adder:inst3|inst6 ; |somadorbcd|adder:inst3|inst6 ; out0             ;
+; |somadorbcd|adder:inst3|inst7 ; |somadorbcd|adder:inst3|inst7 ; out0             ;
+; |somadorbcd|adder:inst3|inst3 ; |somadorbcd|adder:inst3|inst3 ; out0             ;
+; |somadorbcd|adder:inst3|inst4 ; |somadorbcd|adder:inst3|inst4 ; out0             ;
+; |somadorbcd|adder:inst3|inst  ; |somadorbcd|adder:inst3|inst  ; out0             ;
+; |somadorbcd|adder:inst2|inst5 ; |somadorbcd|adder:inst2|inst5 ; out0             ;
+; |somadorbcd|adder:inst2|inst6 ; |somadorbcd|adder:inst2|inst6 ; out0             ;
+; |somadorbcd|adder:inst2|inst7 ; |somadorbcd|adder:inst2|inst7 ; out0             ;
+; |somadorbcd|adder:inst2|inst3 ; |somadorbcd|adder:inst2|inst3 ; out0             ;
+; |somadorbcd|adder:inst2|inst4 ; |somadorbcd|adder:inst2|inst4 ; out0             ;
+; |somadorbcd|adder:inst2|inst  ; |somadorbcd|adder:inst2|inst  ; out0             ;
+; |somadorbcd|adder:inst|inst5  ; |somadorbcd|adder:inst|inst5  ; out0             ;
+; |somadorbcd|adder:inst|inst6  ; |somadorbcd|adder:inst|inst6  ; out0             ;
+; |somadorbcd|adder:inst|inst7  ; |somadorbcd|adder:inst|inst7  ; out0             ;
+; |somadorbcd|adder:inst|inst3  ; |somadorbcd|adder:inst|inst3  ; out0             ;
+; |somadorbcd|adder:inst|inst4  ; |somadorbcd|adder:inst|inst4  ; out0             ;
+; |somadorbcd|adder:inst|inst   ; |somadorbcd|adder:inst|inst   ; out0             ;
++-------------------------------+-------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
@@ -185,22 +185,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; Simulator Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Simulator
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Thu Apr 04 14:06:55 2019
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Apr 04 16:56:02 2019
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ULA -c ULA
-Info: Using vector source file "D:/Users/ibps/Desktop/projetoSD/quartus/ULA.vwf"
-Info: Overwriting simulation input file with simulation results
-    Info: A backup of ULA.vwf called ULA.sim_ori.vwf has been created in the db folder
+Info: Using vector source file "C:/Users/ibps/Desktop/projetoSD/igor/quartus/A.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 17537
-Info: Vector file ULA.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
-Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 232 megabytes
-    Info: Processing ended: Thu Apr 04 14:06:56 2019
+Info: Number of transitions in simulation is 28010
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 206 megabytes
+    Info: Processing ended: Thu Apr 04 16:56:03 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
