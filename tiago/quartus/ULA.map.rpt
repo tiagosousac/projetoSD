@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ULA
-Thu Apr 04 14:38:25 2019
-Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Thu Apr 04 15:41:20 2019
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -37,25 +37,25 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+-------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Thu Apr 04 14:38:25 2019         ;
-; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
-; Revision Name                 ; ULA                                           ;
-; Top-level Entity Name         ; mux3                                          ;
-; Family                        ; Stratix II                                    ;
-; Logic utilization             ; N/A                                           ;
-;     Combinational ALUTs       ; 1                                             ;
-;     Dedicated logic registers ; 0                                             ;
-; Total registers               ; 0                                             ;
-; Total pins                    ; 7                                             ;
-; Total virtual pins            ; 0                                             ;
-; Total block memory bits       ; 0                                             ;
-; DSP block 9-bit elements      ; 0                                             ;
-; Total PLLs                    ; 0                                             ;
-; Total DLLs                    ; 0                                             ;
-+-------------------------------+-----------------------------------------------+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++-------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status   ; Successful - Thu Apr 04 15:41:20 2019        ;
+; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                 ; ULA                                          ;
+; Top-level Entity Name         ; mux5incompleto                               ;
+; Family                        ; Stratix II                                   ;
+; Logic utilization             ; N/A                                          ;
+;     Combinational ALUTs       ; 9                                            ;
+;     Dedicated logic registers ; 0                                            ;
+; Total registers               ; 0                                            ;
+; Total pins                    ; 27                                           ;
+; Total virtual pins            ; 0                                            ;
+; Total block memory bits       ; 0                                            ;
+; DSP block 9-bit elements      ; 0                                            ;
+; Total PLLs                    ; 0                                            ;
+; Total DLLs                    ; 0                                            ;
++-------------------------------+----------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; mux3               ; ULA                ;
+; Top-level entity name                                                      ; mux5incompleto     ; ULA                ;
 ; Family name                                                                ; Stratix II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -155,53 +155,54 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                          ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                          ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+
-; mux3.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/Users/tsc2/Desktop/tsc2/projetoSD/quartus/mux3.bdf ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                     ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+
+; mux5incompleto.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/tsc2/Desktop/projetoSD/tiago/quartus/mux5incompleto.bdf ;
+; bloconovo.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/tsc2/Desktop/projetoSD/tiago/quartus/bloconovo.bdf      ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+
 
 
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+-----------------------------------------------+----------+
-; Resource                                      ; Usage    ;
-+-----------------------------------------------+----------+
-; Estimated ALUTs Used                          ; 1        ;
-; Dedicated logic registers                     ; 0        ;
-;                                               ;          ;
-; Estimated ALUTs Unavailable                   ; 1        ;
-;                                               ;          ;
-; Total combinational functions                 ; 1        ;
-; Combinational ALUT usage by number of inputs  ;          ;
-;     -- 7 input functions                      ; 0        ;
-;     -- 6 input functions                      ; 1        ;
-;     -- 5 input functions                      ; 0        ;
-;     -- 4 input functions                      ; 0        ;
-;     -- <=3 input functions                    ; 0        ;
-;                                               ;          ;
-; Combinational ALUTs by mode                   ;          ;
-;     -- normal mode                            ; 1        ;
-;     -- extended LUT mode                      ; 0        ;
-;     -- arithmetic mode                        ; 0        ;
-;     -- shared arithmetic mode                 ; 0        ;
-;                                               ;          ;
-; Estimated ALUT/register pairs used            ; 2        ;
-;                                               ;          ;
-; Total registers                               ; 0        ;
-;     -- Dedicated logic registers              ; 0        ;
-;     -- I/O registers                          ; 0        ;
-;                                               ;          ;
-; Estimated ALMs:  partially or completely used ; 1        ;
-;                                               ;          ;
-; I/O pins                                      ; 7        ;
-; Maximum fan-out node                          ; inst13~0 ;
-; Maximum fan-out                               ; 1        ;
-; Total fan-out                                 ; 7        ;
-; Average fan-out                               ; 0.88     ;
-+-----------------------------------------------+----------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++-----------------------------------------------+-------+
+; Resource                                      ; Usage ;
++-----------------------------------------------+-------+
+; Estimated ALUTs Used                          ; 9     ;
+; Dedicated logic registers                     ; 0     ;
+;                                               ;       ;
+; Estimated ALUTs Unavailable                   ; 4     ;
+;                                               ;       ;
+; Total combinational functions                 ; 9     ;
+; Combinational ALUT usage by number of inputs  ;       ;
+;     -- 7 input functions                      ; 0     ;
+;     -- 6 input functions                      ; 4     ;
+;     -- 5 input functions                      ; 3     ;
+;     -- 4 input functions                      ; 1     ;
+;     -- <=3 input functions                    ; 1     ;
+;                                               ;       ;
+; Combinational ALUTs by mode                   ;       ;
+;     -- normal mode                            ; 9     ;
+;     -- extended LUT mode                      ; 0     ;
+;     -- arithmetic mode                        ; 0     ;
+;     -- shared arithmetic mode                 ; 0     ;
+;                                               ;       ;
+; Estimated ALUT/register pairs used            ; 13    ;
+;                                               ;       ;
+; Total registers                               ; 0     ;
+;     -- Dedicated logic registers              ; 0     ;
+;     -- I/O registers                          ; 0     ;
+;                                               ;       ;
+; Estimated ALMs:  partially or completely used ; 7     ;
+;                                               ;       ;
+; I/O pins                                      ; 27    ;
+; Maximum fan-out node                          ; S[1]  ;
+; Maximum fan-out                               ; 7     ;
+; Total fan-out                                 ; 49    ;
+; Average fan-out                               ; 1.36  ;
++-----------------------------------------------+-------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,7 +210,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |mux3                      ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 7    ; 0            ; |mux3               ; work         ;
+; |mux5incompleto            ; 9 (9)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 27   ; 0            ; |mux5incompleto     ; work         ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -233,9 +234,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Thu Apr 04 14:38:24 2019
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Apr 04 15:41:18 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file adder.bdf
@@ -260,18 +261,23 @@ Info: Found 1 design units, including 1 entities, in source file somador_subtrac
     Info: Found entity 1: somador_subtracter
 Info: Found 1 design units, including 1 entities, in source file mux3.bdf
     Info: Found entity 1: mux3
-Info: Elaborating entity "mux3" for the top level hierarchy
+Info: Found 1 design units, including 1 entities, in source file mux5incompleto.bdf
+    Info: Found entity 1: mux5incompleto
+Info: Found 1 design units, including 1 entities, in source file bloconovo.bdf
+    Info: Found entity 1: bloconovo
+Info: Elaborating entity "mux5incompleto" for the top level hierarchy
+Info: Elaborating entity "bloconovo" for hierarchy "bloconovo:inst4"
 Warning: Ignored assignments for entity "ULA" -- entity does not exist in design
     Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity ULA -section_id "Root Region" was ignored
     Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity ULA -section_id "Root Region" was ignored
-Info: Implemented 8 device resources after synthesis - the final resource count might be different
-    Info: Implemented 6 input pins
-    Info: Implemented 1 output pins
-    Info: Implemented 1 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 345 megabytes
-    Info: Processing ended: Thu Apr 04 14:38:25 2019
-    Info: Elapsed time: 00:00:01
+Info: Implemented 36 device resources after synthesis - the final resource count might be different
+    Info: Implemented 23 input pins
+    Info: Implemented 4 output pins
+    Info: Implemented 9 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 278 megabytes
+    Info: Processing ended: Thu Apr 04 15:41:20 2019
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
