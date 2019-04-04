@@ -88,7 +88,7 @@ applicable agreement for further details.
 	(output)
 	(rect 784 336 960 352)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "pin_name" (rect 90 0 137 12)(font "Arial" ))
+	(text "R" (rect 90 0 98 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))

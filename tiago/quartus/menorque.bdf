@@ -24,7 +24,7 @@ applicable agreement for further details.
 	(input)
 	(rect 176 72 192 240)
 	(text "INPUT" (rect 6 133 16 161)(font "Arial" (font_size 6))(vertical))
-	(text "A[3..0]" (rect 5 5 17 38)(font "Arial" )(vertical))
+	(text "A[3..0]" (rect 4 9 16 42)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 92)(pt 4 117)(line_width 1))
@@ -41,7 +41,7 @@ applicable agreement for further details.
 	(input)
 	(rect 144 72 160 240)
 	(text "INPUT" (rect 6 133 16 161)(font "Arial" (font_size 6))(vertical))
-	(text "B[3..0]" (rect 4 5 16 38)(font "Arial" )(vertical))
+	(text "B[3..0]" (rect 4 9 16 42)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 92)(pt 4 117)(line_width 1))
