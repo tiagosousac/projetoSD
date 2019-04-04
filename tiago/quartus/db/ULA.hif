@@ -20,26 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-mux5incompleto
-# storage
-db|ULA.(0).cnf
-db|ULA.(0).cnf
-# case_insensitive
-# source_file
-mux5incompleto.bdf
-30a68de82643c194d371be2014860dc
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 bloconovo
 # storage
 db|ULA.(1).cnf
@@ -54,11 +34,188 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-bloconovo:inst4
-bloconovo:inst7
-bloconovo:inst6
-bloconovo:inst1
-bloconovo:inst8
+mux5incompleto:inst|bloconovo:inst4
+mux5incompleto:inst|bloconovo:inst7
+mux5incompleto:inst|bloconovo:inst6
+mux5incompleto:inst|bloconovo:inst1
+mux5incompleto:inst|bloconovo:inst8
+}
+# macro_sequence
+
+# end
+# entity
+AandB
+# storage
+db|ULA.(3).cnf
+db|ULA.(3).cnf
+# case_insensitive
+# source_file
+aandb.bdf
+db5f7083c2fb79ac5a748803320192d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+AandB:inst6
+}
+# macro_sequence
+
+# end
+# entity
+c2b
+# storage
+db|ULA.(4).cnf
+db|ULA.(4).cnf
+# case_insensitive
+# source_file
+c2b.bdf
+893caedb6967f9d6d655744b082d146
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+c2b:inst4
+subtracter:inst3|c2b:inst
+}
+# macro_sequence
+
+# end
+# entity
+adder
+# storage
+db|ULA.(5).cnf
+db|ULA.(5).cnf
+# case_insensitive
+# source_file
+adder.bdf
+118f81afc1edfa43dbf17a4787b7cea
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+c2b:inst4|adder:inst8
+c2b:inst4|adder:inst7
+c2b:inst4|adder:inst
+c2b:inst4|adder:inst9
+fulladder:inst2|adder:inst2
+fulladder:inst2|adder:inst
+fulladder:inst2|adder:inst3
+fulladder:inst2|adder:inst4
+subtracter:inst3|fulladder:inst2|adder:inst2
+subtracter:inst3|fulladder:inst2|adder:inst
+subtracter:inst3|fulladder:inst2|adder:inst3
+subtracter:inst3|fulladder:inst2|adder:inst4
+subtracter:inst3|c2b:inst|adder:inst8
+subtracter:inst3|c2b:inst|adder:inst7
+subtracter:inst3|c2b:inst|adder:inst
+subtracter:inst3|c2b:inst|adder:inst9
+}
+# macro_sequence
+
+# end
+# entity
+fulladder
+# storage
+db|ULA.(6).cnf
+db|ULA.(6).cnf
+# case_insensitive
+# source_file
+fulladder.bdf
+533971db763f1c5a8c14ced6d5bc73e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+fulladder:inst2
+subtracter:inst3|fulladder:inst2
+}
+# macro_sequence
+
+# end
+# entity
+subtracter
+# storage
+db|ULA.(7).cnf
+db|ULA.(7).cnf
+# case_insensitive
+# source_file
+subtracter.bdf
+d2ef2540f3f6685fa3f7d9fab881fe1e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+subtracter:inst3
+}
+# macro_sequence
+
+# end
+# entity
+aXORb
+# storage
+db|ULA.(8).cnf
+db|ULA.(8).cnf
+# case_insensitive
+# source_file
+axorb.bdf
+3ffd77efc3ae49b7c3a3ff29e06335e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+axorb:inst5
+}
+# macro_sequence
+
+# end
+# entity
+testemux5
+# storage
+db|ULA.(0).cnf
+db|ULA.(0).cnf
+# case_insensitive
+# source_file
+testemux5.bdf
+693a12262fd174df0b22070226b1ff9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+mux5incompleto
+# storage
+db|ULA.(2).cnf
+db|ULA.(2).cnf
+# case_insensitive
+# source_file
+mux5incompleto.bdf
+f1c690cbf56de2d3148bf6b7689a82c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mux5incompleto:inst
 }
 # macro_sequence
 

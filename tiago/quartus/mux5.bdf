@@ -975,21 +975,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Resposta[3]" (rect 1900 722 1912 782)(font "Arial" )(vertical))
-	(pt 1896 808)
-	(pt 1896 704)
-)
-(connector
-	(text "Resposta[2]" (rect 1764 722 1776 782)(font "Arial" )(vertical))
-	(pt 1760 704)
-	(pt 1760 808)
-)
-(connector
-	(text "Resposta[1]" (rect 1620 722 1632 782)(font "Arial" )(vertical))
-	(pt 1616 704)
-	(pt 1616 808)
-)
-(connector
 	(pt 1616 808)
 	(pt 1760 808)
 	(bus)
@@ -1461,11 +1446,6 @@ applicable agreement for further details.
 	(pt 696 680)
 )
 (connector
-	(text "Resposta[0]" (rect 1484 722 1496 782)(font "Arial" )(vertical))
-	(pt 1472 808)
-	(pt 1472 704)
-)
-(connector
 	(pt 1416 808)
 	(pt 1472 808)
 	(bus)
@@ -1474,6 +1454,26 @@ applicable agreement for further details.
 	(pt 1472 808)
 	(pt 1616 808)
 	(bus)
+)
+(connector
+	(text "Resposta[3]" (rect 1484 722 1496 782)(font "Arial" )(vertical))
+	(pt 1472 808)
+	(pt 1472 704)
+)
+(connector
+	(text "Resposta[2]" (rect 1620 722 1632 782)(font "Arial" )(vertical))
+	(pt 1616 704)
+	(pt 1616 808)
+)
+(connector
+	(text "Resposta[1]" (rect 1764 722 1776 782)(font "Arial" )(vertical))
+	(pt 1760 704)
+	(pt 1760 808)
+)
+(connector
+	(text "Resposta[0]" (rect 1900 722 1912 782)(font "Arial" )(vertical))
+	(pt 1896 808)
+	(pt 1896 704)
 )
 (junction (pt 576 112))
 (junction (pt 696 152))
