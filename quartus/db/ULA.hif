@@ -1,0 +1,89 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+7
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+somador_subtracter
+# storage
+db|ULA.(0).cnf
+db|ULA.(0).cnf
+# case_insensitive
+# source_file
+somador_subtracter.bdf
+7a9c79c44b39d199661b7219f3eb875b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+adder
+# storage
+db|ULA.(1).cnf
+db|ULA.(1).cnf
+# case_insensitive
+# source_file
+adder.bdf
+118f81afc1edfa43dbf17a4787b7cea
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+adder:inst9
+adder:inst10
+adder:inst11
+adder:inst12
+}
+# macro_sequence
+
+# end
+# entity
+mux2
+# storage
+db|ULA.(2).cnf
+db|ULA.(2).cnf
+# case_insensitive
+# source_file
+mux2.bdf
+148874d04c47a993cca2aa1ce3a4fd6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mux2:inst15
+mux2:inst14
+mux2:inst13
+mux2:inst
+}
+# macro_sequence
+
+# end
+# complete
+

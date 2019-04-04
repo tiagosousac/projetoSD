@@ -1,5 +1,5 @@
 Simulator report for ULA
-Wed Apr 03 16:56:48 2019
+Thu Apr 04 13:01:55 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,41 +45,41 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 45 nodes     ;
-; Simulation Coverage         ;     100.00 % ;
-; Total Number of Transitions ; 1890         ;
+; Simulation Netlist Size     ; 51 nodes     ;
+; Simulation Coverage         ;      86.27 % ;
+; Total Number of Transitions ; 2070         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                      ;
-+--------------------------------------------------------------------------------------------+------------+---------------+
-; Option                                                                                     ; Setting    ; Default Value ;
-+--------------------------------------------------------------------------------------------+------------+---------------+
-; Simulation mode                                                                            ; Functional ; Timing        ;
-; Start time                                                                                 ; 0 ns       ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF       ;               ;
-; Vector input source                                                                        ; a.vwf      ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
-; Check outputs                                                                              ; Off        ; Off           ;
-; Report simulation coverage                                                                 ; On         ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
-; Display missing 1-value coverage report                                                    ; On         ; On            ;
-; Display missing 0-value coverage report                                                    ; On         ; On            ;
-; Detect setup and hold time violations                                                      ; Off        ; Off           ;
-; Detect glitches                                                                            ; Off        ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
-; Generate Signal Activity File                                                              ; Off        ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
-; Group bus channels in simulation results                                                   ; Off        ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
-+--------------------------------------------------------------------------------------------+------------+---------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                  ;
++--------------------------------------------------------------------------------------------+------------------------+---------------+
+; Option                                                                                     ; Setting                ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------+---------------+
+; Simulation mode                                                                            ; Functional             ; Timing        ;
+; Start time                                                                                 ; 0 ns                   ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                   ;               ;
+; Vector input source                                                                        ; somador_subtracter.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                     ; On            ;
+; Check outputs                                                                              ; Off                    ; Off           ;
+; Report simulation coverage                                                                 ; On                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                    ; Off           ;
+; Detect glitches                                                                            ; Off                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                     ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                   ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------+---------------+
 
 
 +----------------------+
@@ -94,84 +94,99 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;     100.00 % ;
-; Total nodes checked                                 ; 45           ;
-; Total output ports checked                          ; 45           ;
-; Total output ports with complete 1/0-value coverage ; 45           ;
-; Total output ports with no 1/0-value coverage       ; 0            ;
-; Total output ports with no 1-value coverage         ; 0            ;
-; Total output ports with no 0-value coverage         ; 0            ;
+; Total coverage as a percentage                      ;      86.27 % ;
+; Total nodes checked                                 ; 51           ;
+; Total output ports checked                          ; 51           ;
+; Total output ports with complete 1/0-value coverage ; 44           ;
+; Total output ports with no 1/0-value coverage       ; 7            ;
+; Total output ports with no 1-value coverage         ; 7            ;
+; Total output ports with no 0-value coverage         ; 7            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                                                                              ;
-+-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
-; Node Name                                                                         ; Output Port Name                                                                  ; Output Port Type ;
-+-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
-; |menorque|R                                                                       ; |menorque|R                                                                       ; pin_out          ;
-; |menorque|inst2                                                                   ; |menorque|inst2                                                                   ; out0             ;
-; |menorque|A[3]                                                                    ; |menorque|A[3]                                                                    ; out              ;
-; |menorque|A[2]                                                                    ; |menorque|A[2]                                                                    ; out              ;
-; |menorque|A[1]                                                                    ; |menorque|A[1]                                                                    ; out              ;
-; |menorque|A[0]                                                                    ; |menorque|A[0]                                                                    ; out              ;
-; |menorque|B[3]                                                                    ; |menorque|B[3]                                                                    ; out              ;
-; |menorque|B[2]                                                                    ; |menorque|B[2]                                                                    ; out              ;
-; |menorque|B[1]                                                                    ; |menorque|B[1]                                                                    ; out              ;
-; |menorque|B[0]                                                                    ; |menorque|B[0]                                                                    ; out              ;
-; |menorque|igual:inst1|inst12                                                      ; |menorque|igual:inst1|inst12                                                      ; out0             ;
-; |menorque|igual:inst1|inst7                                                       ; |menorque|igual:inst1|inst7                                                       ; out0             ;
-; |menorque|igual:inst1|inst6                                                       ; |menorque|igual:inst1|inst6                                                       ; out0             ;
-; |menorque|igual:inst1|inst5                                                       ; |menorque|igual:inst1|inst5                                                       ; out0             ;
-; |menorque|igual:inst1|inst                                                        ; |menorque|igual:inst1|inst                                                        ; out0             ;
-; |menorque|menoremaiorque:inst|inst19                                              ; |menorque|menoremaiorque:inst|inst19                                              ; out0             ;
-; |menorque|menoremaiorque:inst|inst16                                              ; |menorque|menoremaiorque:inst|inst16                                              ; out0             ;
-; |menorque|menoremaiorque:inst|inst15                                              ; |menorque|menoremaiorque:inst|inst15                                              ; out0             ;
-; |menorque|menoremaiorque:inst|instpositivo                                        ; |menorque|menoremaiorque:inst|instpositivo                                        ; out0             ;
-; |menorque|menoremaiorque:inst|inst                                                ; |menorque|menoremaiorque:inst|inst                                                ; out0             ;
-; |menorque|menoremaiorque:inst|inst21                                              ; |menorque|menoremaiorque:inst|inst21                                              ; out0             ;
-; |menorque|menoremaiorque:inst|inst4                                               ; |menorque|menoremaiorque:inst|inst4                                               ; out0             ;
-; |menorque|menoremaiorque:inst|inst12                                              ; |menorque|menoremaiorque:inst|inst12                                              ; out0             ;
-; |menorque|menoremaiorque:inst|instnegativo                                        ; |menorque|menoremaiorque:inst|instnegativo                                        ; out0             ;
-; |menorque|menoremaiorque:inst|igual:inst18|inst12                                 ; |menorque|menoremaiorque:inst|igual:inst18|inst12                                 ; out0             ;
-; |menorque|menoremaiorque:inst|igual:inst18|inst7                                  ; |menorque|menoremaiorque:inst|igual:inst18|inst7                                  ; out0             ;
-; |menorque|menoremaiorque:inst|igual:inst18|inst6                                  ; |menorque|menoremaiorque:inst|igual:inst18|inst6                                  ; out0             ;
-; |menorque|menoremaiorque:inst|igual:inst18|inst5                                  ; |menorque|menoremaiorque:inst|igual:inst18|inst5                                  ; out0             ;
-; |menorque|menoremaiorque:inst|igual:inst18|inst                                   ; |menorque|menoremaiorque:inst|igual:inst18|inst                                   ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|c2b:inst|adder:inst9|inst6        ; |menorque|menoremaiorque:inst|subtracter:inst11|c2b:inst|adder:inst9|inst6        ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|c2b:inst|adder:inst8|inst6        ; |menorque|menoremaiorque:inst|subtracter:inst11|c2b:inst|adder:inst8|inst6        ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|c2b:inst|adder:inst8|inst         ; |menorque|menoremaiorque:inst|subtracter:inst11|c2b:inst|adder:inst8|inst         ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|c2b:inst|adder:inst7|inst6        ; |menorque|menoremaiorque:inst|subtracter:inst11|c2b:inst|adder:inst7|inst6        ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|c2b:inst|adder:inst7|inst         ; |menorque|menoremaiorque:inst|subtracter:inst11|c2b:inst|adder:inst7|inst         ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst4|inst3 ; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst4|inst3 ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst3|inst7 ; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst3|inst7 ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst3|inst3 ; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst3|inst3 ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst3|inst4 ; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst3|inst4 ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst3|inst  ; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst3|inst  ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst|inst7  ; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst|inst7  ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst|inst3  ; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst|inst3  ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst|inst4  ; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst|inst4  ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst|inst   ; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst|inst   ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst2|inst5 ; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst2|inst5 ; out0             ;
-; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst2|inst6 ; |menorque|menoremaiorque:inst|subtracter:inst11|fulladder:inst2|adder:inst2|inst6 ; out0             ;
-+-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
++----------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                        ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |somador_subtracter|overflow           ; |somador_subtracter|overflow           ; pin_out          ;
+; |somador_subtracter|inst20             ; |somador_subtracter|inst20             ; out0             ;
+; |somador_subtracter|A[3]               ; |somador_subtracter|A[3]               ; out              ;
+; |somador_subtracter|A[2]               ; |somador_subtracter|A[2]               ; out              ;
+; |somador_subtracter|A[1]               ; |somador_subtracter|A[1]               ; out              ;
+; |somador_subtracter|A[0]               ; |somador_subtracter|A[0]               ; out              ;
+; |somador_subtracter|B[3]               ; |somador_subtracter|B[3]               ; out              ;
+; |somador_subtracter|B[2]               ; |somador_subtracter|B[2]               ; out              ;
+; |somador_subtracter|B[1]               ; |somador_subtracter|B[1]               ; out              ;
+; |somador_subtracter|B[0]               ; |somador_subtracter|B[0]               ; out              ;
+; |somador_subtracter|R[3]               ; |somador_subtracter|R[3]               ; pin_out          ;
+; |somador_subtracter|R[2]               ; |somador_subtracter|R[2]               ; pin_out          ;
+; |somador_subtracter|R[1]               ; |somador_subtracter|R[1]               ; pin_out          ;
+; |somador_subtracter|R[0]               ; |somador_subtracter|R[0]               ; pin_out          ;
+; |somador_subtracter|mux2:inst|inst5    ; |somador_subtracter|mux2:inst|inst5    ; out0             ;
+; |somador_subtracter|mux2:inst|inst     ; |somador_subtracter|mux2:inst|inst     ; out0             ;
+; |somador_subtracter|adder:inst12|inst5 ; |somador_subtracter|adder:inst12|inst5 ; out0             ;
+; |somador_subtracter|adder:inst12|inst6 ; |somador_subtracter|adder:inst12|inst6 ; out0             ;
+; |somador_subtracter|adder:inst12|inst7 ; |somador_subtracter|adder:inst12|inst7 ; out0             ;
+; |somador_subtracter|adder:inst12|inst3 ; |somador_subtracter|adder:inst12|inst3 ; out0             ;
+; |somador_subtracter|mux2:inst13|inst5  ; |somador_subtracter|mux2:inst13|inst5  ; out0             ;
+; |somador_subtracter|mux2:inst13|inst   ; |somador_subtracter|mux2:inst13|inst   ; out0             ;
+; |somador_subtracter|adder:inst11|inst5 ; |somador_subtracter|adder:inst11|inst5 ; out0             ;
+; |somador_subtracter|adder:inst11|inst6 ; |somador_subtracter|adder:inst11|inst6 ; out0             ;
+; |somador_subtracter|adder:inst11|inst7 ; |somador_subtracter|adder:inst11|inst7 ; out0             ;
+; |somador_subtracter|adder:inst11|inst3 ; |somador_subtracter|adder:inst11|inst3 ; out0             ;
+; |somador_subtracter|adder:inst11|inst4 ; |somador_subtracter|adder:inst11|inst4 ; out0             ;
+; |somador_subtracter|adder:inst11|inst  ; |somador_subtracter|adder:inst11|inst  ; out0             ;
+; |somador_subtracter|mux2:inst14|inst5  ; |somador_subtracter|mux2:inst14|inst5  ; out0             ;
+; |somador_subtracter|mux2:inst14|inst   ; |somador_subtracter|mux2:inst14|inst   ; out0             ;
+; |somador_subtracter|adder:inst10|inst5 ; |somador_subtracter|adder:inst10|inst5 ; out0             ;
+; |somador_subtracter|adder:inst10|inst6 ; |somador_subtracter|adder:inst10|inst6 ; out0             ;
+; |somador_subtracter|adder:inst10|inst7 ; |somador_subtracter|adder:inst10|inst7 ; out0             ;
+; |somador_subtracter|adder:inst10|inst3 ; |somador_subtracter|adder:inst10|inst3 ; out0             ;
+; |somador_subtracter|adder:inst10|inst4 ; |somador_subtracter|adder:inst10|inst4 ; out0             ;
+; |somador_subtracter|adder:inst10|inst  ; |somador_subtracter|adder:inst10|inst  ; out0             ;
+; |somador_subtracter|mux2:inst15|inst5  ; |somador_subtracter|mux2:inst15|inst5  ; out0             ;
+; |somador_subtracter|mux2:inst15|inst   ; |somador_subtracter|mux2:inst15|inst   ; out0             ;
+; |somador_subtracter|adder:inst9|inst5  ; |somador_subtracter|adder:inst9|inst5  ; out0             ;
+; |somador_subtracter|adder:inst9|inst6  ; |somador_subtracter|adder:inst9|inst6  ; out0             ;
+; |somador_subtracter|adder:inst9|inst7  ; |somador_subtracter|adder:inst9|inst7  ; out0             ;
+; |somador_subtracter|adder:inst9|inst3  ; |somador_subtracter|adder:inst9|inst3  ; out0             ;
+; |somador_subtracter|adder:inst9|inst4  ; |somador_subtracter|adder:inst9|inst4  ; out0             ;
+; |somador_subtracter|adder:inst9|inst   ; |somador_subtracter|adder:inst9|inst   ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+-------------------------------------------------+
-; Missing 1-Value Coverage                        ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
++----------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                           ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |somador_subtracter|S                  ; |somador_subtracter|S                  ; out              ;
+; |somador_subtracter|mux2:inst|inst3    ; |somador_subtracter|mux2:inst|inst3    ; out0             ;
+; |somador_subtracter|adder:inst12|inst4 ; |somador_subtracter|adder:inst12|inst4 ; out0             ;
+; |somador_subtracter|adder:inst12|inst  ; |somador_subtracter|adder:inst12|inst  ; out0             ;
+; |somador_subtracter|mux2:inst13|inst3  ; |somador_subtracter|mux2:inst13|inst3  ; out0             ;
+; |somador_subtracter|mux2:inst14|inst3  ; |somador_subtracter|mux2:inst14|inst3  ; out0             ;
+; |somador_subtracter|mux2:inst15|inst3  ; |somador_subtracter|mux2:inst15|inst3  ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+-------------------------------------------------+
-; Missing 0-Value Coverage                        ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
++----------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                           ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |somador_subtracter|S                  ; |somador_subtracter|S                  ; out              ;
+; |somador_subtracter|mux2:inst|inst3    ; |somador_subtracter|mux2:inst|inst3    ; out0             ;
+; |somador_subtracter|adder:inst12|inst4 ; |somador_subtracter|adder:inst12|inst4 ; out0             ;
+; |somador_subtracter|adder:inst12|inst  ; |somador_subtracter|adder:inst12|inst  ; out0             ;
+; |somador_subtracter|mux2:inst13|inst3  ; |somador_subtracter|mux2:inst13|inst3  ; out0             ;
+; |somador_subtracter|mux2:inst14|inst3  ; |somador_subtracter|mux2:inst14|inst3  ; out0             ;
+; |somador_subtracter|mux2:inst15|inst3  ; |somador_subtracter|mux2:inst15|inst3  ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
 
 
 +---------------------+
@@ -187,21 +202,21 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed Apr 03 16:56:48 2019
+    Info: Processing started: Thu Apr 04 13:01:55 2019
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ULA -c ULA
-Info: Using vector source file "c:/programfiles/altera/quartus9/quartus/a.vwf"
+Info: Using vector source file "C:/ProgramFiles/Altera/Quartus9/quartus/projetoSD/quartus/somador_subtracter.vwf"
 Info: Overwriting simulation input file with simulation results
-    Info: A backup of a.vwf called ULA.sim_ori.vwf has been created in the db folder
+    Info: A backup of somador_subtracter.vwf called ULA.sim_ori.vwf has been created in the db folder
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 1890
-Info: Vector file a.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Simulation coverage is      86.27 %
+Info: Number of transitions in simulation is 2070
+Info: Vector file somador_subtracter.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 206 megabytes
-    Info: Processing ended: Wed Apr 03 16:56:49 2019
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Thu Apr 04 13:01:55 2019
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

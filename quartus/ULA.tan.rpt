@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for ULA
-Wed Apr 03 16:56:07 2019
+Thu Apr 04 13:00:00 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -34,14 +34,14 @@ applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                                                               ;
-+------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
-; Type                         ; Slack ; Required Time ; Actual Time ; From ; To ; From Clock ; To Clock ; Failed Paths ;
-+------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 11.027 ns   ; A[0] ; R  ; --         ; --       ; 0            ;
-; Total number of failed paths ;       ;               ;             ;      ;    ;            ;          ; 0            ;
-+------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                 ;
++------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From ; To   ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 9.911 ns    ; B[0] ; R[2] ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;      ;      ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+------+------+------------+----------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -93,20 +93,44 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------+
-; tpd                                                     ;
-+-------+-------------------+-----------------+------+----+
-; Slack ; Required P2P Time ; Actual P2P Time ; From ; To ;
-+-------+-------------------+-----------------+------+----+
-; N/A   ; None              ; 11.027 ns       ; A[0] ; R  ;
-; N/A   ; None              ; 10.707 ns       ; B[1] ; R  ;
-; N/A   ; None              ; 10.287 ns       ; A[2] ; R  ;
-; N/A   ; None              ; 10.237 ns       ; B[0] ; R  ;
-; N/A   ; None              ; 10.152 ns       ; B[2] ; R  ;
-; N/A   ; None              ; 9.737 ns        ; A[3] ; R  ;
-; N/A   ; None              ; 9.701 ns        ; B[3] ; R  ;
-; N/A   ; None              ; 7.933 ns        ; A[1] ; R  ;
-+-------+-------------------+-----------------+------+----+
++---------------------------------------------------------------+
+; tpd                                                           ;
++-------+-------------------+-----------------+------+----------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From ; To       ;
++-------+-------------------+-----------------+------+----------+
+; N/A   ; None              ; 9.911 ns        ; B[0] ; R[2]     ;
+; N/A   ; None              ; 9.854 ns        ; B[0] ; overflow ;
+; N/A   ; None              ; 9.852 ns        ; S    ; R[2]     ;
+; N/A   ; None              ; 9.832 ns        ; B[0] ; R[3]     ;
+; N/A   ; None              ; 9.795 ns        ; S    ; overflow ;
+; N/A   ; None              ; 9.773 ns        ; S    ; R[3]     ;
+; N/A   ; None              ; 9.670 ns        ; A[0] ; R[2]     ;
+; N/A   ; None              ; 9.642 ns        ; A[1] ; R[2]     ;
+; N/A   ; None              ; 9.613 ns        ; A[0] ; overflow ;
+; N/A   ; None              ; 9.591 ns        ; A[0] ; R[3]     ;
+; N/A   ; None              ; 9.585 ns        ; A[1] ; overflow ;
+; N/A   ; None              ; 9.563 ns        ; B[0] ; R[1]     ;
+; N/A   ; None              ; 9.563 ns        ; A[1] ; R[3]     ;
+; N/A   ; None              ; 9.473 ns        ; S    ; R[1]     ;
+; N/A   ; None              ; 9.432 ns        ; B[0] ; R[0]     ;
+; N/A   ; None              ; 9.402 ns        ; B[3] ; overflow ;
+; N/A   ; None              ; 9.379 ns        ; B[3] ; R[3]     ;
+; N/A   ; None              ; 9.291 ns        ; A[0] ; R[1]     ;
+; N/A   ; None              ; 9.229 ns        ; A[1] ; R[1]     ;
+; N/A   ; None              ; 9.088 ns        ; B[1] ; R[2]     ;
+; N/A   ; None              ; 9.053 ns        ; A[2] ; overflow ;
+; N/A   ; None              ; 9.031 ns        ; B[1] ; overflow ;
+; N/A   ; None              ; 9.028 ns        ; A[2] ; R[3]     ;
+; N/A   ; None              ; 9.009 ns        ; B[1] ; R[3]     ;
+; N/A   ; None              ; 8.919 ns        ; B[2] ; overflow ;
+; N/A   ; None              ; 8.894 ns        ; B[2] ; R[3]     ;
+; N/A   ; None              ; 8.851 ns        ; B[2] ; R[2]     ;
+; N/A   ; None              ; 8.844 ns        ; A[2] ; R[2]     ;
+; N/A   ; None              ; 8.809 ns        ; A[3] ; overflow ;
+; N/A   ; None              ; 8.788 ns        ; A[3] ; R[3]     ;
+; N/A   ; None              ; 8.709 ns        ; B[1] ; R[1]     ;
+; N/A   ; None              ; 8.681 ns        ; A[0] ; R[0]     ;
++-------+-------------------+-----------------+------+----------+
 
 
 +--------------------------+
@@ -115,20 +139,20 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed Apr 03 16:56:07 2019
+    Info: Processing started: Thu Apr 04 13:00:00 2019
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off ULA -c ULA --timing_analysis_only
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info: Longest tpd from source pin "A[0]" to destination pin "R" is 11.027 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.827 ns) = 0.827 ns; Loc. = PIN_F8; Fanout = 1; PIN Node = 'A[0]'
-    Info: 2: + IC(4.742 ns) + CELL(0.272 ns) = 5.841 ns; Loc. = LCCOMB_X13_Y11_N2; Fanout = 1; COMB Node = 'inst2~0'
-    Info: 3: + IC(0.259 ns) + CELL(0.378 ns) = 6.478 ns; Loc. = LCCOMB_X13_Y11_N6; Fanout = 1; COMB Node = 'inst2~1'
-    Info: 4: + IC(2.577 ns) + CELL(1.972 ns) = 11.027 ns; Loc. = PIN_W5; Fanout = 0; PIN Node = 'R'
-    Info: Total cell delay = 3.449 ns ( 31.28 % )
-    Info: Total interconnect delay = 7.578 ns ( 68.72 % )
+Info: Longest tpd from source pin "B[0]" to destination pin "R[2]" is 9.911 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.827 ns) = 0.827 ns; Loc. = PIN_E14; Fanout = 3; PIN Node = 'B[0]'
+    Info: 2: + IC(4.521 ns) + CELL(0.225 ns) = 5.573 ns; Loc. = LCCOMB_X10_Y9_N16; Fanout = 3; COMB Node = 'adder:inst11|inst7~0'
+    Info: 3: + IC(0.285 ns) + CELL(0.366 ns) = 6.224 ns; Loc. = LCCOMB_X10_Y9_N14; Fanout = 1; COMB Node = 'adder:inst10|inst5'
+    Info: 4: + IC(1.725 ns) + CELL(1.962 ns) = 9.911 ns; Loc. = PIN_D14; Fanout = 0; PIN Node = 'R[2]'
+    Info: Total cell delay = 3.380 ns ( 34.10 % )
+    Info: Total interconnect delay = 6.531 ns ( 65.90 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 238 megabytes
-    Info: Processing ended: Wed Apr 03 16:56:07 2019
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Thu Apr 04 13:00:01 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

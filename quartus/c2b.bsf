@@ -31,13 +31,6 @@ applicable agreement for further details.
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 0 48)
-		(input)
-		(text "Cin" (rect 0 0 17 14)(font "Arial" (font_size 8)))
-		(text "Cin" (rect 21 43 38 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
 		(pt 128 32)
 		(output)
 		(text "S[3..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))

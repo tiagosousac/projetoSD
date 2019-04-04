@@ -1,0 +1,113 @@
+|somador_subtracter
+overflow <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => adder:inst12.A
+A[1] => adder:inst11.A
+A[2] => adder:inst10.A
+A[3] => adder:inst9.A
+B[0] => inst19.IN0
+B[0] => mux2:inst.B
+B[1] => inst18.IN0
+B[1] => mux2:inst13.B
+B[2] => inst17.IN0
+B[2] => mux2:inst14.B
+B[3] => inst16.IN0
+B[3] => mux2:inst15.B
+S => mux2:inst15.S
+S => mux2:inst14.S
+S => mux2:inst13.S
+S => mux2:inst.S
+S => adder:inst12.Cin
+R[0] <= adder:inst12.S
+R[1] <= adder:inst11.S
+R[2] <= adder:inst10.S
+R[3] <= adder:inst9.S
+
+
+|somador_subtracter|adder:inst9
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst6.IN0
+B => inst3.IN1
+B => inst.IN0
+Cin => inst6.IN1
+Cin => inst4.IN1
+Cin => inst.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador_subtracter|mux2:inst15
+R <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst4.IN0
+B => inst3.IN1
+A => inst.IN0
+
+
+|somador_subtracter|adder:inst10
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst6.IN0
+B => inst3.IN1
+B => inst.IN0
+Cin => inst6.IN1
+Cin => inst4.IN1
+Cin => inst.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador_subtracter|mux2:inst14
+R <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst4.IN0
+B => inst3.IN1
+A => inst.IN0
+
+
+|somador_subtracter|adder:inst11
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst6.IN0
+B => inst3.IN1
+B => inst.IN0
+Cin => inst6.IN1
+Cin => inst4.IN1
+Cin => inst.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador_subtracter|mux2:inst13
+R <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst4.IN0
+B => inst3.IN1
+A => inst.IN0
+
+
+|somador_subtracter|adder:inst12
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst6.IN0
+B => inst3.IN1
+B => inst.IN0
+Cin => inst6.IN1
+Cin => inst4.IN1
+Cin => inst.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador_subtracter|mux2:inst
+R <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+S => inst3.IN0
+S => inst4.IN0
+B => inst3.IN1
+A => inst.IN0
+
+
