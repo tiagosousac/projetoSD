@@ -1,0 +1,196 @@
+Quartus II 64-Bit
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+7
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+somador_subtracter
+# storage
+db|ULA.(0).cnf
+db|ULA.(0).cnf
+# case_insensitive
+# source_file
+somador_subtracter.bdf
+cda83b38b22f7d2a87504643fb88bedd
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+adder
+# storage
+db|ULA.(1).cnf
+db|ULA.(1).cnf
+# case_insensitive
+# source_file
+adder.bdf
+118f81afc1edfa43dbf17a4787b7cea
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+mux2
+# storage
+db|ULA.(2).cnf
+db|ULA.(2).cnf
+# case_insensitive
+# source_file
+mux2.bdf
+148874d04c47a993cca2aa1ce3a4fd6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+fulladder
+# storage
+db|ULA.(5).cnf
+db|ULA.(5).cnf
+# case_insensitive
+# source_file
+fulladder.bdf
+533971db763f1c5a8c14ced6d5bc73e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+igual
+# storage
+db|ULA.(7).cnf
+db|ULA.(7).cnf
+# case_insensitive
+# source_file
+igual.bdf
+8f9bc0d9c53fbeb2d12ef39f256a7e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+maiorque
+# storage
+db|ULA.(3).cnf
+db|ULA.(3).cnf
+# case_insensitive
+# source_file
+maiorque.bdf
+fbea82fe9350472b4ece5dec42b83fdd
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+c2b
+# storage
+db|ULA.(4).cnf
+db|ULA.(4).cnf
+# case_insensitive
+# source_file
+c2b.bdf
+893caedb6967f9d6d655744b082d146
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+subtracter
+# storage
+db|ULA.(6).cnf
+db|ULA.(6).cnf
+# case_insensitive
+# source_file
+subtracter.bdf
+d2ef2540f3f6685fa3f7d9fab881fe1e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+menorque
+# storage
+db|ULA.(8).cnf
+db|ULA.(8).cnf
+# case_insensitive
+# source_file
+menorque.bdf
+9856ed3aa1db6298893644cec64c1e9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+mux3
+# storage
+db|ULA.(9).cnf
+db|ULA.(9).cnf
+# case_insensitive
+# source_file
+mux3.bdf
+7119459d207e92199e9eefa4cb9d26ae
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
