@@ -1,6 +1,6 @@
 Simulator report for ULA
-Thu Apr 04 16:56:02 2019
-Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Mon Apr 08 16:57:59 2019
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 45 nodes     ;
+; Simulation Netlist Size     ; 18 nodes     ;
 ; Simulation Coverage         ;     100.00 % ;
-; Total Number of Transitions ; 28010        ;
+; Total Number of Transitions ; 4773         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
@@ -86,7 +86,7 @@ applicable agreement for further details.
 ; Simulation Waveforms ;
 +----------------------+
 Waveform report data cannot be output to ASCII.
-Please use Quartus II to view the waveform report data.
+Please use Quartus II 64-Bit to view the waveform report data.
 
 
 +--------------------------------------------------------------------+
@@ -95,9 +95,9 @@ Please use Quartus II to view the waveform report data.
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
 ; Total coverage as a percentage                      ;     100.00 % ;
-; Total nodes checked                                 ; 45           ;
-; Total output ports checked                          ; 45           ;
-; Total output ports with complete 1/0-value coverage ; 45           ;
+; Total nodes checked                                 ; 18           ;
+; Total output ports checked                          ; 18           ;
+; Total output ports with complete 1/0-value coverage ; 18           ;
 ; Total output ports with no 1/0-value coverage       ; 0            ;
 ; Total output ports with no 1-value coverage         ; 0            ;
 ; Total output ports with no 0-value coverage         ; 0            ;
@@ -105,57 +105,30 @@ Please use Quartus II to view the waveform report data.
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+----------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                      ;
-+-------------------------------+-------------------------------+------------------+
-; Node Name                     ; Output Port Name              ; Output Port Type ;
-+-------------------------------+-------------------------------+------------------+
-; |somadorbcd|Cout              ; |somadorbcd|Cout              ; pin_out          ;
-; |somadorbcd|inst6             ; |somadorbcd|inst6             ; out0             ;
-; |somadorbcd|inst7             ; |somadorbcd|inst7             ; out0             ;
-; |somadorbcd|A[3]              ; |somadorbcd|A[3]              ; out              ;
-; |somadorbcd|A[2]              ; |somadorbcd|A[2]              ; out              ;
-; |somadorbcd|A[1]              ; |somadorbcd|A[1]              ; out              ;
-; |somadorbcd|A[0]              ; |somadorbcd|A[0]              ; out              ;
-; |somadorbcd|B[3]              ; |somadorbcd|B[3]              ; out              ;
-; |somadorbcd|B[2]              ; |somadorbcd|B[2]              ; out              ;
-; |somadorbcd|B[1]              ; |somadorbcd|B[1]              ; out              ;
-; |somadorbcd|B[0]              ; |somadorbcd|B[0]              ; out              ;
-; |somadorbcd|inst8             ; |somadorbcd|inst8             ; out0             ;
-; |somadorbcd|S[3]              ; |somadorbcd|S[3]              ; pin_out          ;
-; |somadorbcd|S[2]              ; |somadorbcd|S[2]              ; pin_out          ;
-; |somadorbcd|S[1]              ; |somadorbcd|S[1]              ; pin_out          ;
-; |somadorbcd|S[0]              ; |somadorbcd|S[0]              ; pin_out          ;
-; |somadorbcd|inst12            ; |somadorbcd|inst12            ; out0             ;
-; |somadorbcd|adder:inst9|inst5 ; |somadorbcd|adder:inst9|inst5 ; out0             ;
-; |somadorbcd|adder:inst9|inst6 ; |somadorbcd|adder:inst9|inst6 ; out0             ;
-; |somadorbcd|adder:inst9|inst7 ; |somadorbcd|adder:inst9|inst7 ; out0             ;
-; |somadorbcd|adder:inst9|inst3 ; |somadorbcd|adder:inst9|inst3 ; out0             ;
-; |somadorbcd|adder:inst9|inst4 ; |somadorbcd|adder:inst9|inst4 ; out0             ;
-; |somadorbcd|adder:inst9|inst  ; |somadorbcd|adder:inst9|inst  ; out0             ;
-; |somadorbcd|adder:inst4|inst5 ; |somadorbcd|adder:inst4|inst5 ; out0             ;
-; |somadorbcd|adder:inst4|inst3 ; |somadorbcd|adder:inst4|inst3 ; out0             ;
-; |somadorbcd|adder:inst1|inst5 ; |somadorbcd|adder:inst1|inst5 ; out0             ;
-; |somadorbcd|adder:inst1|inst3 ; |somadorbcd|adder:inst1|inst3 ; out0             ;
-; |somadorbcd|adder:inst3|inst5 ; |somadorbcd|adder:inst3|inst5 ; out0             ;
-; |somadorbcd|adder:inst3|inst6 ; |somadorbcd|adder:inst3|inst6 ; out0             ;
-; |somadorbcd|adder:inst3|inst7 ; |somadorbcd|adder:inst3|inst7 ; out0             ;
-; |somadorbcd|adder:inst3|inst3 ; |somadorbcd|adder:inst3|inst3 ; out0             ;
-; |somadorbcd|adder:inst3|inst4 ; |somadorbcd|adder:inst3|inst4 ; out0             ;
-; |somadorbcd|adder:inst3|inst  ; |somadorbcd|adder:inst3|inst  ; out0             ;
-; |somadorbcd|adder:inst2|inst5 ; |somadorbcd|adder:inst2|inst5 ; out0             ;
-; |somadorbcd|adder:inst2|inst6 ; |somadorbcd|adder:inst2|inst6 ; out0             ;
-; |somadorbcd|adder:inst2|inst7 ; |somadorbcd|adder:inst2|inst7 ; out0             ;
-; |somadorbcd|adder:inst2|inst3 ; |somadorbcd|adder:inst2|inst3 ; out0             ;
-; |somadorbcd|adder:inst2|inst4 ; |somadorbcd|adder:inst2|inst4 ; out0             ;
-; |somadorbcd|adder:inst2|inst  ; |somadorbcd|adder:inst2|inst  ; out0             ;
-; |somadorbcd|adder:inst|inst5  ; |somadorbcd|adder:inst|inst5  ; out0             ;
-; |somadorbcd|adder:inst|inst6  ; |somadorbcd|adder:inst|inst6  ; out0             ;
-; |somadorbcd|adder:inst|inst7  ; |somadorbcd|adder:inst|inst7  ; out0             ;
-; |somadorbcd|adder:inst|inst3  ; |somadorbcd|adder:inst|inst3  ; out0             ;
-; |somadorbcd|adder:inst|inst4  ; |somadorbcd|adder:inst|inst4  ; out0             ;
-; |somadorbcd|adder:inst|inst   ; |somadorbcd|adder:inst|inst   ; out0             ;
-+-------------------------------+-------------------------------+------------------+
++--------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                    ;
++------------------------------+------------------------------+------------------+
+; Node Name                    ; Output Port Name             ; Output Port Type ;
++------------------------------+------------------------------+------------------+
+; |maiorQueDiferenciado|R      ; |maiorQueDiferenciado|R      ; pin_out          ;
+; |maiorQueDiferenciado|inst11 ; |maiorQueDiferenciado|inst11 ; out0             ;
+; |maiorQueDiferenciado|inst14 ; |maiorQueDiferenciado|inst14 ; out0             ;
+; |maiorQueDiferenciado|inst10 ; |maiorQueDiferenciado|inst10 ; out0             ;
+; |maiorQueDiferenciado|inst8  ; |maiorQueDiferenciado|inst8  ; out0             ;
+; |maiorQueDiferenciado|A[3]   ; |maiorQueDiferenciado|A[3]   ; out              ;
+; |maiorQueDiferenciado|A[2]   ; |maiorQueDiferenciado|A[2]   ; out              ;
+; |maiorQueDiferenciado|A[1]   ; |maiorQueDiferenciado|A[1]   ; out              ;
+; |maiorQueDiferenciado|A[0]   ; |maiorQueDiferenciado|A[0]   ; out              ;
+; |maiorQueDiferenciado|B[3]   ; |maiorQueDiferenciado|B[3]   ; out              ;
+; |maiorQueDiferenciado|B[2]   ; |maiorQueDiferenciado|B[2]   ; out              ;
+; |maiorQueDiferenciado|B[1]   ; |maiorQueDiferenciado|B[1]   ; out              ;
+; |maiorQueDiferenciado|B[0]   ; |maiorQueDiferenciado|B[0]   ; out              ;
+; |maiorQueDiferenciado|inst5  ; |maiorQueDiferenciado|inst5  ; out0             ;
+; |maiorQueDiferenciado|inst6  ; |maiorQueDiferenciado|inst6  ; out0             ;
+; |maiorQueDiferenciado|inst   ; |maiorQueDiferenciado|inst   ; out0             ;
+; |maiorQueDiferenciado|inst13 ; |maiorQueDiferenciado|inst13 ; out0             ;
+; |maiorQueDiferenciado|inst15 ; |maiorQueDiferenciado|inst15 ; out0             ;
++------------------------------+------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
@@ -185,19 +158,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; Simulator Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II Simulator
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 04 16:56:02 2019
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Mon Apr 08 16:57:58 2019
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ULA -c ULA
-Info: Using vector source file "C:/Users/ibps/Desktop/projetoSD/igor/quartus/A.vwf"
+Info: Using vector source file "D:/Users/ibps/Desktop/projetoSD/igor/quartus/A.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 28010
-Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 206 megabytes
-    Info: Processing ended: Thu Apr 04 16:56:03 2019
+Info: Number of transitions in simulation is 4773
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 234 megabytes
+    Info: Processing ended: Mon Apr 08 16:57:59 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 

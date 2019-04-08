@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Apr 04 16:53:41 2019
-Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Analysis & Synthesis Status : Successful - Mon Apr 08 16:56:57 2019
+Quartus II 64-Bit Version : 9.1 Build 350 03/24/2010 SP 2 SJ Full Version
 Revision Name : ULA
-Top-level Entity Name : somadorbcd
+Top-level Entity Name : maiorQueDiferenciado
 Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 11
+    Combinational ALUTs : 2
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 13
+Total pins : 9
 Total virtual pins : 0
 Total block memory bits : 0
 DSP block 9-bit elements : 0

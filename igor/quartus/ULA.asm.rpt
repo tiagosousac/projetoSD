@@ -1,6 +1,6 @@
 Assembler report for ULA
-Thu Apr 04 16:53:53 2019
-Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Mon Apr 08 16:57:02 2019
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -10,8 +10,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/ibps/Desktop/projetoSD/igor/quartus/ULA.sof
-  6. Assembler Device Options: C:/Users/ibps/Desktop/projetoSD/igor/quartus/ULA.pof
+  5. Assembler Device Options: D:/Users/ibps/Desktop/projetoSD/igor/quartus/ULA.sof
+  6. Assembler Device Options: D:/Users/ibps/Desktop/projetoSD/igor/quartus/ULA.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Apr 04 16:53:53 2019 ;
+; Assembler Status      ; Successful - Mon Apr 08 16:57:02 2019 ;
 ; Revision Name         ; ULA                                   ;
-; Top-level Entity Name ; somadorbcd                            ;
+; Top-level Entity Name ; maiorQueDiferenciado                  ;
 ; Family                ; Stratix II                            ;
 ; Device                ; EP2S15F484C3                          ;
 +-----------------------+---------------------------------------+
@@ -84,30 +84,30 @@ applicable agreement for further details.
 +------------------------------------------------------+
 ; File Name                                            ;
 +------------------------------------------------------+
-; C:/Users/ibps/Desktop/projetoSD/igor/quartus/ULA.sof ;
-; C:/Users/ibps/Desktop/projetoSD/igor/quartus/ULA.pof ;
+; D:/Users/ibps/Desktop/projetoSD/igor/quartus/ULA.sof ;
+; D:/Users/ibps/Desktop/projetoSD/igor/quartus/ULA.pof ;
 +------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/ibps/Desktop/projetoSD/igor/quartus/ULA.sof ;
+; Assembler Device Options: D:/Users/ibps/Desktop/projetoSD/igor/quartus/ULA.sof ;
 +----------------+---------------------------------------------------------------+
 ; Option         ; Setting                                                       ;
 +----------------+---------------------------------------------------------------+
 ; Device         ; EP2S15F484C3                                                  ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                    ;
-; Checksum       ; 0x00278E32                                                    ;
+; Checksum       ; 0x00275CB6                                                    ;
 +----------------+---------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/ibps/Desktop/projetoSD/igor/quartus/ULA.pof ;
+; Assembler Device Options: D:/Users/ibps/Desktop/projetoSD/igor/quartus/ULA.pof ;
 +--------------------+-----------------------------------------------------------+
 ; Option             ; Setting                                                   ;
 +--------------------+-----------------------------------------------------------+
 ; Device             ; EPC16                                                     ;
 ; JTAG usercode      ; 0xFFFFFFFF                                                ;
-; Checksum           ; 0x1EF60138                                                ;
+; Checksum           ; 0x1EF670D4                                                ;
 ; Compression Ratio  ; 3                                                         ;
 +--------------------+-----------------------------------------------------------+
 
@@ -116,16 +116,16 @@ applicable agreement for further details.
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II Assembler
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 04 16:53:50 2019
+Info: Running Quartus II 64-Bit Assembler
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Mon Apr 08 16:57:01 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ULA -c ULA
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
-Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 293 megabytes
-    Info: Processing ended: Thu Apr 04 16:53:53 2019
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 339 megabytes
+    Info: Processing ended: Mon Apr 08 16:57:02 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
