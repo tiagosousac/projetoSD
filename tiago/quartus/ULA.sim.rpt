@@ -1,6 +1,6 @@
 Simulator report for ULA
-Thu Apr 04 15:58:58 2019
-Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Mon Apr 08 16:51:30 2019
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -45,48 +45,48 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 94 nodes     ;
-; Simulation Coverage         ;      98.94 % ;
-; Total Number of Transitions ; 24847        ;
+; Simulation Netlist Size     ; 15 nodes     ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 4754         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                      ;
-+--------------------------------------------------------------------------------------------+------------+---------------+
-; Option                                                                                     ; Setting    ; Default Value ;
-+--------------------------------------------------------------------------------------------+------------+---------------+
-; Simulation mode                                                                            ; Functional ; Timing        ;
-; Start time                                                                                 ; 0 ns       ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF       ;               ;
-; Vector input source                                                                        ; teste.vwf  ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
-; Check outputs                                                                              ; Off        ; Off           ;
-; Report simulation coverage                                                                 ; On         ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
-; Display missing 1-value coverage report                                                    ; On         ; On            ;
-; Display missing 0-value coverage report                                                    ; On         ; On            ;
-; Detect setup and hold time violations                                                      ; Off        ; Off           ;
-; Detect glitches                                                                            ; Off        ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
-; Generate Signal Activity File                                                              ; Off        ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
-; Group bus channels in simulation results                                                   ; Off        ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
-+--------------------------------------------------------------------------------------------+------------+---------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                           ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                                     ; Setting         ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Simulation mode                                                                            ; Functional      ; Timing        ;
+; Start time                                                                                 ; 0 ns            ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF            ;               ;
+; Vector input source                                                                        ; testemaior2.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On              ; On            ;
+; Check outputs                                                                              ; Off             ; Off           ;
+; Report simulation coverage                                                                 ; On              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On              ; On            ;
+; Display missing 1-value coverage report                                                    ; On              ; On            ;
+; Display missing 0-value coverage report                                                    ; On              ; On            ;
+; Detect setup and hold time violations                                                      ; Off             ; Off           ;
+; Detect glitches                                                                            ; Off             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off             ; Off           ;
+; Generate Signal Activity File                                                              ; Off             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto            ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
 
 
 +----------------------+
 ; Simulation Waveforms ;
 +----------------------+
 Waveform report data cannot be output to ASCII.
-Please use Quartus II to view the waveform report data.
+Please use Quartus II 64-Bit to view the waveform report data.
 
 
 +--------------------------------------------------------------------+
@@ -94,136 +94,54 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      98.94 % ;
-; Total nodes checked                                 ; 94           ;
-; Total output ports checked                          ; 94           ;
-; Total output ports with complete 1/0-value coverage ; 93           ;
-; Total output ports with no 1/0-value coverage       ; 1            ;
-; Total output ports with no 1-value coverage         ; 1            ;
-; Total output ports with no 0-value coverage         ; 1            ;
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 15           ;
+; Total output ports checked                          ; 15           ;
+; Total output ports with complete 1/0-value coverage ; 15           ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                                      ;
-+---------------------------------------------------------------+---------------------------------------------------------------+------------------+
-; Node Name                                                     ; Output Port Name                                              ; Output Port Type ;
-+---------------------------------------------------------------+---------------------------------------------------------------+------------------+
-; |testemux5|Resposta[3]                                        ; |testemux5|Resposta[3]                                        ; pin_out          ;
-; |testemux5|Resposta[2]                                        ; |testemux5|Resposta[2]                                        ; pin_out          ;
-; |testemux5|Resposta[1]                                        ; |testemux5|Resposta[1]                                        ; pin_out          ;
-; |testemux5|Resposta[0]                                        ; |testemux5|Resposta[0]                                        ; pin_out          ;
-; |testemux5|A[3]                                               ; |testemux5|A[3]                                               ; out              ;
-; |testemux5|A[2]                                               ; |testemux5|A[2]                                               ; out              ;
-; |testemux5|A[1]                                               ; |testemux5|A[1]                                               ; out              ;
-; |testemux5|A[0]                                               ; |testemux5|A[0]                                               ; out              ;
-; |testemux5|B[3]                                               ; |testemux5|B[3]                                               ; out              ;
-; |testemux5|B[2]                                               ; |testemux5|B[2]                                               ; out              ;
-; |testemux5|B[1]                                               ; |testemux5|B[1]                                               ; out              ;
-; |testemux5|B[0]                                               ; |testemux5|B[0]                                               ; out              ;
-; |testemux5|S[2]                                               ; |testemux5|S[2]                                               ; out              ;
-; |testemux5|S[1]                                               ; |testemux5|S[1]                                               ; out              ;
-; |testemux5|S[0]                                               ; |testemux5|S[0]                                               ; out              ;
-; |testemux5|axorb:inst5|inst4                                  ; |testemux5|axorb:inst5|inst4                                  ; out0             ;
-; |testemux5|axorb:inst5|inst3                                  ; |testemux5|axorb:inst5|inst3                                  ; out0             ;
-; |testemux5|axorb:inst5|inst2                                  ; |testemux5|axorb:inst5|inst2                                  ; out0             ;
-; |testemux5|axorb:inst5|inst                                   ; |testemux5|axorb:inst5|inst                                   ; out0             ;
-; |testemux5|subtracter:inst3|c2b:inst|adder:inst9|inst6        ; |testemux5|subtracter:inst3|c2b:inst|adder:inst9|inst6        ; out0             ;
-; |testemux5|subtracter:inst3|c2b:inst|adder:inst7|inst6        ; |testemux5|subtracter:inst3|c2b:inst|adder:inst7|inst6        ; out0             ;
-; |testemux5|subtracter:inst3|c2b:inst|adder:inst7|inst         ; |testemux5|subtracter:inst3|c2b:inst|adder:inst7|inst         ; out0             ;
-; |testemux5|subtracter:inst3|c2b:inst|adder:inst8|inst6        ; |testemux5|subtracter:inst3|c2b:inst|adder:inst8|inst6        ; out0             ;
-; |testemux5|subtracter:inst3|c2b:inst|adder:inst8|inst         ; |testemux5|subtracter:inst3|c2b:inst|adder:inst8|inst         ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst4|inst5 ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst4|inst5 ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst4|inst3 ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst4|inst3 ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst3|inst5 ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst3|inst5 ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst3|inst6 ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst3|inst6 ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst3|inst7 ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst3|inst7 ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst3|inst3 ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst3|inst3 ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst3|inst4 ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst3|inst4 ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst3|inst  ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst3|inst  ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst|inst5  ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst|inst5  ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst|inst6  ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst|inst6  ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst|inst7  ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst|inst7  ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst|inst3  ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst|inst3  ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst|inst4  ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst|inst4  ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst|inst   ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst|inst   ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst2|inst5 ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst2|inst5 ; out0             ;
-; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst2|inst6 ; |testemux5|subtracter:inst3|fulladder:inst2|adder:inst2|inst6 ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst4|inst5                  ; |testemux5|fulladder:inst2|adder:inst4|inst5                  ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst4|inst3                  ; |testemux5|fulladder:inst2|adder:inst4|inst3                  ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst3|inst5                  ; |testemux5|fulladder:inst2|adder:inst3|inst5                  ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst3|inst6                  ; |testemux5|fulladder:inst2|adder:inst3|inst6                  ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst3|inst7                  ; |testemux5|fulladder:inst2|adder:inst3|inst7                  ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst3|inst3                  ; |testemux5|fulladder:inst2|adder:inst3|inst3                  ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst3|inst4                  ; |testemux5|fulladder:inst2|adder:inst3|inst4                  ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst3|inst                   ; |testemux5|fulladder:inst2|adder:inst3|inst                   ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst|inst5                   ; |testemux5|fulladder:inst2|adder:inst|inst5                   ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst|inst6                   ; |testemux5|fulladder:inst2|adder:inst|inst6                   ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst|inst7                   ; |testemux5|fulladder:inst2|adder:inst|inst7                   ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst|inst3                   ; |testemux5|fulladder:inst2|adder:inst|inst3                   ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst|inst4                   ; |testemux5|fulladder:inst2|adder:inst|inst4                   ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst|inst                    ; |testemux5|fulladder:inst2|adder:inst|inst                    ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst2|inst5                  ; |testemux5|fulladder:inst2|adder:inst2|inst5                  ; out0             ;
-; |testemux5|fulladder:inst2|adder:inst2|inst6                  ; |testemux5|fulladder:inst2|adder:inst2|inst6                  ; out0             ;
-; |testemux5|c2b:inst4|adder:inst9|inst6                        ; |testemux5|c2b:inst4|adder:inst9|inst6                        ; out0             ;
-; |testemux5|c2b:inst4|adder:inst7|inst6                        ; |testemux5|c2b:inst4|adder:inst7|inst6                        ; out0             ;
-; |testemux5|c2b:inst4|adder:inst7|inst                         ; |testemux5|c2b:inst4|adder:inst7|inst                         ; out0             ;
-; |testemux5|c2b:inst4|adder:inst8|inst6                        ; |testemux5|c2b:inst4|adder:inst8|inst6                        ; out0             ;
-; |testemux5|c2b:inst4|adder:inst8|inst                         ; |testemux5|c2b:inst4|adder:inst8|inst                         ; out0             ;
-; |testemux5|AandB:inst6|inst4                                  ; |testemux5|AandB:inst6|inst4                                  ; out0             ;
-; |testemux5|AandB:inst6|inst3                                  ; |testemux5|AandB:inst6|inst3                                  ; out0             ;
-; |testemux5|AandB:inst6|inst                                   ; |testemux5|AandB:inst6|inst                                   ; out0             ;
-; |testemux5|AandB:inst6|inst5                                  ; |testemux5|AandB:inst6|inst5                                  ; out0             ;
-; |testemux5|mux5incompleto:inst|inst17                         ; |testemux5|mux5incompleto:inst|inst17                         ; out0             ;
-; |testemux5|mux5incompleto:inst|inst15                         ; |testemux5|mux5incompleto:inst|inst15                         ; out0             ;
-; |testemux5|mux5incompleto:inst|inst16                         ; |testemux5|mux5incompleto:inst|inst16                         ; out0             ;
-; |testemux5|mux5incompleto:inst|inst5                          ; |testemux5|mux5incompleto:inst|inst5                          ; out0             ;
-; |testemux5|mux5incompleto:inst|inst14                         ; |testemux5|mux5incompleto:inst|inst14                         ; out0             ;
-; |testemux5|mux5incompleto:inst|inst12                         ; |testemux5|mux5incompleto:inst|inst12                         ; out0             ;
-; |testemux5|mux5incompleto:inst|inst11                         ; |testemux5|mux5incompleto:inst|inst11                         ; out0             ;
-; |testemux5|mux5incompleto:inst|inst10                         ; |testemux5|mux5incompleto:inst|inst10                         ; out0             ;
-; |testemux5|mux5incompleto:inst|inst9                          ; |testemux5|mux5incompleto:inst|inst9                          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst8|inst           ; |testemux5|mux5incompleto:inst|bloconovo:inst8|inst           ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst8|inst2          ; |testemux5|mux5incompleto:inst|bloconovo:inst8|inst2          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst8|inst3          ; |testemux5|mux5incompleto:inst|bloconovo:inst8|inst3          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst8|inst4          ; |testemux5|mux5incompleto:inst|bloconovo:inst8|inst4          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst1|inst           ; |testemux5|mux5incompleto:inst|bloconovo:inst1|inst           ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst1|inst2          ; |testemux5|mux5incompleto:inst|bloconovo:inst1|inst2          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst1|inst3          ; |testemux5|mux5incompleto:inst|bloconovo:inst1|inst3          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst1|inst4          ; |testemux5|mux5incompleto:inst|bloconovo:inst1|inst4          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst6|inst           ; |testemux5|mux5incompleto:inst|bloconovo:inst6|inst           ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst6|inst2          ; |testemux5|mux5incompleto:inst|bloconovo:inst6|inst2          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst6|inst4          ; |testemux5|mux5incompleto:inst|bloconovo:inst6|inst4          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst7|inst           ; |testemux5|mux5incompleto:inst|bloconovo:inst7|inst           ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst7|inst2          ; |testemux5|mux5incompleto:inst|bloconovo:inst7|inst2          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst7|inst3          ; |testemux5|mux5incompleto:inst|bloconovo:inst7|inst3          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst7|inst4          ; |testemux5|mux5incompleto:inst|bloconovo:inst7|inst4          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst4|inst           ; |testemux5|mux5incompleto:inst|bloconovo:inst4|inst           ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst4|inst2          ; |testemux5|mux5incompleto:inst|bloconovo:inst4|inst2          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst4|inst3          ; |testemux5|mux5incompleto:inst|bloconovo:inst4|inst3          ; out0             ;
-; |testemux5|mux5incompleto:inst|bloconovo:inst4|inst4          ; |testemux5|mux5incompleto:inst|bloconovo:inst4|inst4          ; out0             ;
-+---------------------------------------------------------------+---------------------------------------------------------------+------------------+
++----------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                            ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |amaiorb3bits|pin_name           ; |amaiorb3bits|pin_name           ; pin_out          ;
+; |amaiorb3bits|inst4              ; |amaiorb3bits|inst4              ; out0             ;
+; |amaiorb3bits|inst5              ; |amaiorb3bits|inst5              ; out0             ;
+; |amaiorb3bits|A[2]               ; |amaiorb3bits|A[2]               ; out              ;
+; |amaiorb3bits|A[1]               ; |amaiorb3bits|A[1]               ; out              ;
+; |amaiorb3bits|A[0]               ; |amaiorb3bits|A[0]               ; out              ;
+; |amaiorb3bits|B[2]               ; |amaiorb3bits|B[2]               ; out              ;
+; |amaiorb3bits|B[1]               ; |amaiorb3bits|B[1]               ; out              ;
+; |amaiorb3bits|B[0]               ; |amaiorb3bits|B[0]               ; out              ;
+; |amaiorb3bits|inst7              ; |amaiorb3bits|inst7              ; out0             ;
+; |amaiorb3bits|inst10             ; |amaiorb3bits|inst10             ; out0             ;
+; |amaiorb3bits|inst8              ; |amaiorb3bits|inst8              ; out0             ;
+; |amaiorb3bits|amaiorb:inst3|inst ; |amaiorb3bits|amaiorb:inst3|inst ; out0             ;
+; |amaiorb3bits|amaiorb:inst|inst  ; |amaiorb3bits|amaiorb:inst|inst  ; out0             ;
+; |amaiorb3bits|amaiorb:inst2|inst ; |amaiorb3bits|amaiorb:inst2|inst ; out0             ;
++----------------------------------+----------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                                                       ;
-+------------------------------------------------------+------------------------------------------------------+------------------+
-; Node Name                                            ; Output Port Name                                     ; Output Port Type ;
-+------------------------------------------------------+------------------------------------------------------+------------------+
-; |testemux5|mux5incompleto:inst|bloconovo:inst6|inst3 ; |testemux5|mux5incompleto:inst|bloconovo:inst6|inst3 ; out0             ;
-+------------------------------------------------------+------------------------------------------------------+------------------+
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                                                       ;
-+------------------------------------------------------+------------------------------------------------------+------------------+
-; Node Name                                            ; Output Port Name                                     ; Output Port Type ;
-+------------------------------------------------------+------------------------------------------------------+------------------+
-; |testemux5|mux5incompleto:inst|bloconovo:inst6|inst3 ; |testemux5|mux5incompleto:inst|bloconovo:inst6|inst3 ; out0             ;
-+------------------------------------------------------+------------------------------------------------------+------------------+
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 +---------------------+
@@ -237,20 +155,20 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; Simulator Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II Simulator
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 04 15:58:58 2019
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Mon Apr 08 16:51:30 2019
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ULA -c ULA
-Info: Using vector source file "C:/Users/tsc2/Desktop/projetoSD/tiago/quartus/teste.vwf"
+Info: Using vector source file "D:/Users/tsc2/Desktop/projetoSD/tiago/quartus/testemaior2.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      98.94 %
-Info: Number of transitions in simulation is 24847
-Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 206 megabytes
-    Info: Processing ended: Thu Apr 04 15:58:58 2019
+Info: Simulation coverage is     100.00 %
+Info: Number of transitions in simulation is 4754
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 233 megabytes
+    Info: Processing ended: Mon Apr 08 16:51:30 2019
     Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 
