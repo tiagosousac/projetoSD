@@ -1,13 +1,48 @@
 |maiorQueDiferenciado
-R <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => inst8.IN0
-A[1] => inst6.IN0
-A[2] => inst.IN0
-A[3] => inst12.IN0
-B[0] => inst9.IN0
-B[1] => inst7.IN0
-B[2] => inst4.IN0
-B[3] => inst14.IN1
-B[3] => inst13.IN1
+R <= comparadorBitSignif:inst10.Cout
+A[0] => comparadorBit-Bit:inst.A-bit
+A[1] => comparadorBit-Bit:inst1.A-bit
+A[2] => comparadorBit-Bit:inst2.A-bit
+A[3] => comparadorBitSignif:inst10.A-bit
+B[0] => comparadorBit-Bit:inst.B-bit
+B[1] => comparadorBit-Bit:inst1.B-bit
+B[2] => comparadorBit-Bit:inst2.B-bit
+B[3] => comparadorBitSignif:inst10.B-bit
+
+
+|maiorQueDiferenciado|comparadorBitSignif:inst10
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A-bit => inst.IN0
+B-bit => inst4.IN1
+B-bit => inst5.IN1
+Cin => inst5.IN0
+Cin => inst3.IN0
+
+
+|maiorQueDiferenciado|comparadorBit-Bit:inst2
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A-bit => inst4.IN0
+A-bit => inst3.IN1
+B-bit => inst.IN0
+Cin => inst5.IN0
+Cin => inst3.IN0
+
+
+|maiorQueDiferenciado|comparadorBit-Bit:inst1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A-bit => inst4.IN0
+A-bit => inst3.IN1
+B-bit => inst.IN0
+Cin => inst5.IN0
+Cin => inst3.IN0
+
+
+|maiorQueDiferenciado|comparadorBit-Bit:inst
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A-bit => inst4.IN0
+A-bit => inst3.IN1
+B-bit => inst.IN0
+Cin => inst5.IN0
+Cin => inst3.IN0
 
 

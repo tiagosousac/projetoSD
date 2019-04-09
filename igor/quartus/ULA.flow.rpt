@@ -1,6 +1,6 @@
 Flow report for ULA
-Mon Apr 08 16:57:03 2019
-Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Tue Apr 09 00:42:07 2019
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -35,28 +35,28 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+-------------------------------+-----------------------------------------------+
-; Flow Status                   ; Successful - Mon Apr 08 16:57:03 2019         ;
-; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
-; Revision Name                 ; ULA                                           ;
-; Top-level Entity Name         ; maiorQueDiferenciado                          ;
-; Family                        ; Stratix II                                    ;
-; Met timing requirements       ; Yes                                           ;
-; Logic utilization             ; < 1 %                                         ;
-;     Combinational ALUTs       ; 2 / 12,480 ( < 1 % )                          ;
-;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                            ;
-; Total registers               ; 0                                             ;
-; Total pins                    ; 9 / 343 ( 3 % )                               ;
-; Total virtual pins            ; 0                                             ;
-; Total block memory bits       ; 0 / 419,328 ( 0 % )                           ;
-; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                                ;
-; Total PLLs                    ; 0 / 6 ( 0 % )                                 ;
-; Total DLLs                    ; 0 / 2 ( 0 % )                                 ;
-; Device                        ; EP2S15F484C3                                  ;
-; Timing Models                 ; Final                                         ;
-+-------------------------------+-----------------------------------------------+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++-------------------------------+----------------------------------------------+
+; Flow Status                   ; Successful - Tue Apr 09 00:42:07 2019        ;
+; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                 ; ULA                                          ;
+; Top-level Entity Name         ; maiorQueDiferenciado                         ;
+; Family                        ; Stratix II                                   ;
+; Met timing requirements       ; Yes                                          ;
+; Logic utilization             ; < 1 %                                        ;
+;     Combinational ALUTs       ; 2 / 12,480 ( < 1 % )                         ;
+;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                           ;
+; Total registers               ; 0                                            ;
+; Total pins                    ; 9 / 343 ( 3 % )                              ;
+; Total virtual pins            ; 0                                            ;
+; Total block memory bits       ; 0 / 419,328 ( 0 % )                          ;
+; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                               ;
+; Total PLLs                    ; 0 / 6 ( 0 % )                                ;
+; Total DLLs                    ; 0 / 2 ( 0 % )                                ;
+; Device                        ; EP2S15F484C3                                 ;
+; Timing Models                 ; Final                                        ;
++-------------------------------+----------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/08/2019 16:56:56 ;
+; Start date & time ; 04/09/2019 00:41:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ULA                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+----------------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name          ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+----------------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 229335799398825.155475341621340 ; --            ; --                   ; --             ;
+; COMPILER_SIGNATURE_ID              ; 229335801198145.155478131701468 ; --            ; --                   ; --             ;
 ; PARTITION_COLOR                    ; 16764057                        ; --            ; maiorQueDiferenciado ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; maiorQueDiferenciado ; Top            ;
 ; TOP_LEVEL_ENTITY                   ; maiorQueDiferenciado            ; ULA           ; --                   ; --             ;
@@ -88,10 +88,10 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 341 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:03     ; 1.0                     ; 518 MB              ; 00:00:03                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 339 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 267 MB              ; 00:00:00                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 239 MB              ; 00:00:01                           ;
+; Fitter                  ; 00:00:03     ; 1.0                     ; 283 MB              ; 00:00:03                           ;
+; Assembler               ; 00:00:01     ; 1.0                     ; 249 MB              ; 00:00:01                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 179 MB              ; 00:00:00                           ;
 ; Total                   ; 00:00:05     ; --                      ; --                  ; 00:00:05                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
@@ -101,10 +101,10 @@ applicable agreement for further details.
 +-------------------------+------------------+---------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; g3c37            ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                  ; g3c37            ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler               ; g3c37            ; Windows Vista ; 6.2        ; x86_64         ;
-; Classic Timing Analyzer ; g3c37            ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis    ; DESKTOP-FQMH4UL  ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; DESKTOP-FQMH4UL  ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; DESKTOP-FQMH4UL  ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; DESKTOP-FQMH4UL  ; Windows Vista ; 6.2        ; x86_64         ;
 +-------------------------+------------------+---------------+------------+----------------+
 
 

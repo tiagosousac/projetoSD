@@ -1,5 +1,5 @@
-Quartus II 64-Bit
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 7
 3700
 OFF
@@ -20,48 +20,14 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-somadorbcd
-# storage
-db|ULA.(0).cnf
-db|ULA.(0).cnf
-# case_insensitive
-# source_file
-somadorbcd.bdf
-9f83eed76ed9262048ec87cae790a3a2
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-adder
-# storage
-db|ULA.(1).cnf
-db|ULA.(1).cnf
-# case_insensitive
-# source_file
-adder.bdf
-118f81afc1edfa43dbf17a4787b7cea
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
 maiorQueDiferenciado
 # storage
-db|ULA.(2).cnf
-db|ULA.(2).cnf
+db|ULA.(0).cnf
+db|ULA.(0).cnf
 # case_insensitive
 # source_file
 maiorquediferenciado.bdf
-7cd1cafd6433086d2da1be0257325e
+72719bda811da3be3d2f62992a7781
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -69,6 +35,48 @@ AUTO
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+comparadorBitSignif
+# storage
+db|ULA.(1).cnf
+db|ULA.(1).cnf
+# case_insensitive
+# source_file
+comparadorbitsignif.bdf
+1cc3c2453b7c3ea7dc0bba81cdf3b7a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+comparadorBitSignif:inst10
+}
+# macro_sequence
+
+# end
+# entity
+comparadorBit-Bit
+# storage
+db|ULA.(2).cnf
+db|ULA.(2).cnf
+# case_insensitive
+# source_file
+comparadorbit-bit.bdf
+418e4dcfe25171d67bb73beae7c15b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+comparadorBit-Bit:inst2
+comparadorBit-Bit:inst1
+comparadorBit-Bit:inst
 }
 # macro_sequence
 
