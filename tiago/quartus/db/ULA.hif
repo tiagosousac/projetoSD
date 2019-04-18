@@ -1,5 +1,5 @@
-Quartus II 64-Bit
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 7
 3700
 OFF
@@ -20,14 +20,56 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-amaiorb3bits
+adder
+# storage
+db|ULA.(3).cnf
+db|ULA.(3).cnf
+# case_insensitive
+# source_file
+adder.bdf
+118f81afc1edfa43dbf17a4787b7cea
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+adder:inst4
+adder:inst2
+adder:inst3
+adder:inst1
+adder:inst9
+adder:inst10
+}
+# macro_sequence
+
+# end
+# entity
+DisplayBCD
 # storage
 db|ULA.(0).cnf
 db|ULA.(0).cnf
 # case_insensitive
 # source_file
-amaiorb3bits.bdf
-b8f42b04661ee41654c375fe4bbcf
+displaybcd.bdf
+a1cfee5238988ae3c5b65f32ef82d7a9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+somadorbcd
+# storage
+db|ULA.(1).cnf
+db|ULA.(1).cnf
+# case_insensitive
+# source_file
+somadorbcd.bdf
+54b714a4c4bd9c6c3f68e7d45905e
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -35,28 +77,6 @@ AUTO
 }
 # hierarchies {
 |
-}
-# macro_sequence
-
-# end
-# entity
-amaiorb
-# storage
-db|ULA.(1).cnf
-db|ULA.(1).cnf
-# case_insensitive
-# source_file
-amaiorb.bdf
-d96462426c5e83db6ed79eec555d5cf
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-amaiorb:inst2
-amaiorb:inst
-amaiorb:inst3
 }
 # macro_sequence
 

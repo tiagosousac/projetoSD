@@ -1,0 +1,85 @@
+GED
+
+	Undo Commands
+	     1.	Properties
+	     2.	Properties
+	     3.	Properties
+	     4.	Properties
+	     5.	Properties
+	     6.	Properties
+	     7.	Properties
+	     8.	Properties
+	     9.	Properties
+	    10.	Properties
+	    11.	Properties
+	    12.	Properties
+	    13.	Properties
+	    14.	Properties
+	    15.	Properties
+	    16.	Properties
+	    17.	Move
+	    18.	Move
+	    19.	Move
+	    20.	Move
+	    21.	Rotate 90
+	    22.	Move
+	    23.	Rotate 90
+	    24.	Rotate 90
+	    25.	Insert Symbol
+	    26.	Insert Symbol
+	    27.	Insert Symbol
+	    28.	Insert Symbol
+	    29.	Delete
+	    30.	Delete
+	    31.	Delete
+	    32.	Delete
+	    33.	Delete
+	    34.	Delete
+	    35.	Properties
+	    36.	Properties
+	    37.	Properties
+	    38.	Properties
+	    39.	Properties
+	    40.	Properties
+	    41.	Properties
+	    42.	Properties
+	    43.	Properties
+
+
+GED
+
+	Undo Commands
+	     1.	Update Symbol or Block
+	     2.	Move
+	     3.	Paste
+	     4.	Delete
+	     5.	Move
+	     6.	Paste
+	     7.	Delete
+	     8.	Move
+	     9.	Paste
+	    10.	Move
+	    11.	Paste
+	    12.	Move
+	    13.	Delete
+	    14.	Delete
+	    15.	Delete
+	    16.	Paste
+	    17.	Move
+	    18.	Delete
+	    19.	Resize
+	    20.	Delete Insert
+	    21.	Rotate 90
+	    22.	Rotate 90
+	    23.	Rotate 90
+	    24.	Insert Symbol
+
+
+GED
+
+	Undo Commands
+	     1.	Insert Symbol
+	     2.	Insert Symbol
+	     3.	Insert Symbol
+
+

@@ -1,32 +1,101 @@
-|amaiorb3bits
-pin_name <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => amaiorb:inst3.A
-A[1] => amaiorb:inst2.A
-A[1] => inst8.IN0
-A[2] => inst7.IN0
-A[2] => amaiorb:inst.A
-B[0] => amaiorb:inst3.B
-B[1] => amaiorb:inst2.B
-B[1] => inst8.IN1
-B[2] => inst7.IN1
-B[2] => amaiorb:inst.B
+|somadorbcd
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => adder:inst1.A
+A[1] => adder:inst3.A
+A[2] => adder:inst2.A
+A[3] => adder:inst4.A
+B[0] => adder:inst1.B
+B[1] => adder:inst3.B
+B[2] => adder:inst2.B
+B[3] => adder:inst4.B
+pin_name <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+S[0] <= adder:inst1.S
+S[1] <= adder:inst10.S
+S[2] <= adder:inst9.S
+S[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|amaiorb3bits|amaiorb:inst2
-pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-B => inst2.IN0
+|somadorbcd|adder:inst4
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst6.IN0
+B => inst3.IN1
+B => inst.IN0
+Cin => inst6.IN1
+Cin => inst4.IN1
+Cin => inst.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|amaiorb3bits|amaiorb:inst
-pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-B => inst2.IN0
+|somadorbcd|adder:inst2
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst6.IN0
+B => inst3.IN1
+B => inst.IN0
+Cin => inst6.IN1
+Cin => inst4.IN1
+Cin => inst.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|amaiorb3bits|amaiorb:inst3
-pin_name <= inst.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-B => inst2.IN0
+|somadorbcd|adder:inst3
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst6.IN0
+B => inst3.IN1
+B => inst.IN0
+Cin => inst6.IN1
+Cin => inst4.IN1
+Cin => inst.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorbcd|adder:inst1
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst6.IN0
+B => inst3.IN1
+B => inst.IN0
+Cin => inst6.IN1
+Cin => inst4.IN1
+Cin => inst.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorbcd|adder:inst9
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst6.IN0
+B => inst3.IN1
+B => inst.IN0
+Cin => inst6.IN1
+Cin => inst4.IN1
+Cin => inst.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorbcd|adder:inst10
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst3.IN0
+A => inst4.IN0
+B => inst6.IN0
+B => inst3.IN1
+B => inst.IN0
+Cin => inst6.IN1
+Cin => inst4.IN1
+Cin => inst.IN1
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 
 
