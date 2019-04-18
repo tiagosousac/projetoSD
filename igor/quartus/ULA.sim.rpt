@@ -1,5 +1,5 @@
 Simulator report for ULA
-Tue Apr 09 00:43:11 2019
+Thu Apr 18 14:28:52 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 22 nodes     ;
-; Simulation Coverage         ;     100.00 % ;
-; Total Number of Transitions ; 6260         ;
+; Simulation Netlist Size     ; 194 nodes    ;
+; Simulation Coverage         ;      79.38 % ;
+; Total Number of Transitions ; 38863        ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
@@ -61,7 +61,7 @@ applicable agreement for further details.
 ; Simulation mode                                                                            ; Functional ; Timing        ;
 ; Start time                                                                                 ; 0 ns       ; 0 ns          ;
 ; Simulation results format                                                                  ; CVWF       ;               ;
-; Vector input source                                                                        ; A.vwf      ;               ;
+; Vector input source                                                                        ; Testes.vwf ;               ;
 ; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
 ; Check outputs                                                                              ; Off        ; Off           ;
 ; Report simulation coverage                                                                 ; On         ; On            ;
@@ -94,61 +94,275 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;     100.00 % ;
-; Total nodes checked                                 ; 22           ;
-; Total output ports checked                          ; 22           ;
-; Total output ports with complete 1/0-value coverage ; 22           ;
-; Total output ports with no 1/0-value coverage       ; 0            ;
-; Total output ports with no 1-value coverage         ; 0            ;
-; Total output ports with no 0-value coverage         ; 0            ;
+; Total coverage as a percentage                      ;      79.38 % ;
+; Total nodes checked                                 ; 194          ;
+; Total output ports checked                          ; 194          ;
+; Total output ports with complete 1/0-value coverage ; 154          ;
+; Total output ports with no 1/0-value coverage       ; 40           ;
+; Total output ports with no 1-value coverage         ; 40           ;
+; Total output ports with no 0-value coverage         ; 40           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                        ;
-+--------------------------------------------------------+--------------------------------------------------------+------------------+
-; Node Name                                              ; Output Port Name                                       ; Output Port Type ;
-+--------------------------------------------------------+--------------------------------------------------------+------------------+
-; |maiorQueDiferenciado|R                                ; |maiorQueDiferenciado|R                                ; pin_out          ;
-; |maiorQueDiferenciado|A[3]                             ; |maiorQueDiferenciado|A[3]                             ; out              ;
-; |maiorQueDiferenciado|A[2]                             ; |maiorQueDiferenciado|A[2]                             ; out              ;
-; |maiorQueDiferenciado|A[1]                             ; |maiorQueDiferenciado|A[1]                             ; out              ;
-; |maiorQueDiferenciado|A[0]                             ; |maiorQueDiferenciado|A[0]                             ; out              ;
-; |maiorQueDiferenciado|B[3]                             ; |maiorQueDiferenciado|B[3]                             ; out              ;
-; |maiorQueDiferenciado|B[2]                             ; |maiorQueDiferenciado|B[2]                             ; out              ;
-; |maiorQueDiferenciado|B[1]                             ; |maiorQueDiferenciado|B[1]                             ; out              ;
-; |maiorQueDiferenciado|B[0]                             ; |maiorQueDiferenciado|B[0]                             ; out              ;
-; |maiorQueDiferenciado|comparadorBit-Bit:inst|inst4     ; |maiorQueDiferenciado|comparadorBit-Bit:inst|inst4     ; out0             ;
-; |maiorQueDiferenciado|comparadorBit-Bit:inst1|inst6    ; |maiorQueDiferenciado|comparadorBit-Bit:inst1|inst6    ; out0             ;
-; |maiorQueDiferenciado|comparadorBit-Bit:inst1|inst4    ; |maiorQueDiferenciado|comparadorBit-Bit:inst1|inst4    ; out0             ;
-; |maiorQueDiferenciado|comparadorBit-Bit:inst1|inst5    ; |maiorQueDiferenciado|comparadorBit-Bit:inst1|inst5    ; out0             ;
-; |maiorQueDiferenciado|comparadorBit-Bit:inst1|inst3    ; |maiorQueDiferenciado|comparadorBit-Bit:inst1|inst3    ; out0             ;
-; |maiorQueDiferenciado|comparadorBit-Bit:inst2|inst6    ; |maiorQueDiferenciado|comparadorBit-Bit:inst2|inst6    ; out0             ;
-; |maiorQueDiferenciado|comparadorBit-Bit:inst2|inst4    ; |maiorQueDiferenciado|comparadorBit-Bit:inst2|inst4    ; out0             ;
-; |maiorQueDiferenciado|comparadorBit-Bit:inst2|inst5    ; |maiorQueDiferenciado|comparadorBit-Bit:inst2|inst5    ; out0             ;
-; |maiorQueDiferenciado|comparadorBit-Bit:inst2|inst3    ; |maiorQueDiferenciado|comparadorBit-Bit:inst2|inst3    ; out0             ;
-; |maiorQueDiferenciado|comparadorBitSignif:inst10|inst6 ; |maiorQueDiferenciado|comparadorBitSignif:inst10|inst6 ; out0             ;
-; |maiorQueDiferenciado|comparadorBitSignif:inst10|inst4 ; |maiorQueDiferenciado|comparadorBitSignif:inst10|inst4 ; out0             ;
-; |maiorQueDiferenciado|comparadorBitSignif:inst10|inst5 ; |maiorQueDiferenciado|comparadorBitSignif:inst10|inst5 ; out0             ;
-; |maiorQueDiferenciado|comparadorBitSignif:inst10|inst3 ; |maiorQueDiferenciado|comparadorBitSignif:inst10|inst3 ; out0             ;
-+--------------------------------------------------------+--------------------------------------------------------+------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                          ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; Node Name                                                                       ; Output Port Name                                                                ; Output Port Type ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; |ULA|A[3]                                                                       ; |ULA|A[3]                                                                       ; out              ;
+; |ULA|A[2]                                                                       ; |ULA|A[2]                                                                       ; out              ;
+; |ULA|A[1]                                                                       ; |ULA|A[1]                                                                       ; out              ;
+; |ULA|A[0]                                                                       ; |ULA|A[0]                                                                       ; out              ;
+; |ULA|B[3]                                                                       ; |ULA|B[3]                                                                       ; out              ;
+; |ULA|B[2]                                                                       ; |ULA|B[2]                                                                       ; out              ;
+; |ULA|B[1]                                                                       ; |ULA|B[1]                                                                       ; out              ;
+; |ULA|B[0]                                                                       ; |ULA|B[0]                                                                       ; out              ;
+; |ULA|D[6]                                                                       ; |ULA|D[6]                                                                       ; pin_out          ;
+; |ULA|D[5]                                                                       ; |ULA|D[5]                                                                       ; pin_out          ;
+; |ULA|D[4]                                                                       ; |ULA|D[4]                                                                       ; pin_out          ;
+; |ULA|D[3]                                                                       ; |ULA|D[3]                                                                       ; pin_out          ;
+; |ULA|D[2]                                                                       ; |ULA|D[2]                                                                       ; pin_out          ;
+; |ULA|D[1]                                                                       ; |ULA|D[1]                                                                       ; pin_out          ;
+; |ULA|D[0]                                                                       ; |ULA|D[0]                                                                       ; pin_out          ;
+; |ULA|R[0]                                                                       ; |ULA|R[0]                                                                       ; pin_out          ;
+; |ULA|V[3]                                                                       ; |ULA|V[3]                                                                       ; pin_out          ;
+; |ULA|V[2]                                                                       ; |ULA|V[2]                                                                       ; pin_out          ;
+; |ULA|V[1]                                                                       ; |ULA|V[1]                                                                       ; pin_out          ;
+; |ULA|V[0]                                                                       ; |ULA|V[0]                                                                       ; pin_out          ;
+; |ULA|AxorB:inst6|inst4                                                          ; |ULA|AxorB:inst6|inst4                                                          ; out0             ;
+; |ULA|AxorB:inst6|inst3                                                          ; |ULA|AxorB:inst6|inst3                                                          ; out0             ;
+; |ULA|AxorB:inst6|inst2                                                          ; |ULA|AxorB:inst6|inst2                                                          ; out0             ;
+; |ULA|AxorB:inst6|inst                                                           ; |ULA|AxorB:inst6|inst                                                           ; out0             ;
+; |ULA|AandB:inst3|inst4                                                          ; |ULA|AandB:inst3|inst4                                                          ; out0             ;
+; |ULA|AandB:inst3|inst3                                                          ; |ULA|AandB:inst3|inst3                                                          ; out0             ;
+; |ULA|AandB:inst3|inst                                                           ; |ULA|AandB:inst3|inst                                                           ; out0             ;
+; |ULA|AandB:inst3|inst5                                                          ; |ULA|AandB:inst3|inst5                                                          ; out0             ;
+; |ULA|mux5:inst2|inst12                                                          ; |ULA|mux5:inst2|inst12                                                          ; out0             ;
+; |ULA|mux5:inst2|inst11                                                          ; |ULA|mux5:inst2|inst11                                                          ; out0             ;
+; |ULA|mux5:inst2|inst10                                                          ; |ULA|mux5:inst2|inst10                                                          ; out0             ;
+; |ULA|mux5:inst2|inst9                                                           ; |ULA|mux5:inst2|inst9                                                           ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst7|inst                                            ; |ULA|mux5:inst2|bloconovo:inst7|inst                                            ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst7|inst2                                           ; |ULA|mux5:inst2|bloconovo:inst7|inst2                                           ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst7|inst3                                           ; |ULA|mux5:inst2|bloconovo:inst7|inst3                                           ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst7|inst4                                           ; |ULA|mux5:inst2|bloconovo:inst7|inst4                                           ; out0             ;
+; |ULA|DisplayULA:inst4|inst16                                                    ; |ULA|DisplayULA:inst4|inst16                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst18                                                    ; |ULA|DisplayULA:inst4|inst18                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst17                                                    ; |ULA|DisplayULA:inst4|inst17                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst20                                                    ; |ULA|DisplayULA:inst4|inst20                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst19                                                    ; |ULA|DisplayULA:inst4|inst19                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst24                                                    ; |ULA|DisplayULA:inst4|inst24                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst10                                                    ; |ULA|DisplayULA:inst4|inst10                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst11                                                    ; |ULA|DisplayULA:inst4|inst11                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst1                                                     ; |ULA|DisplayULA:inst4|inst1                                                     ; out0             ;
+; |ULA|DisplayULA:inst4|inst29                                                    ; |ULA|DisplayULA:inst4|inst29                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst15                                                    ; |ULA|DisplayULA:inst4|inst15                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst26                                                    ; |ULA|DisplayULA:inst4|inst26                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst5                                                     ; |ULA|DisplayULA:inst4|inst5                                                     ; out0             ;
+; |ULA|DisplayULA:inst4|inst14                                                    ; |ULA|DisplayULA:inst4|inst14                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst6                                                     ; |ULA|DisplayULA:inst4|inst6                                                     ; out0             ;
+; |ULA|DisplayULA:inst4|inst30                                                    ; |ULA|DisplayULA:inst4|inst30                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst13                                                    ; |ULA|DisplayULA:inst4|inst13                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst12                                                    ; |ULA|DisplayULA:inst4|inst12                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst25                                                    ; |ULA|DisplayULA:inst4|inst25                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst8                                                     ; |ULA|DisplayULA:inst4|inst8                                                     ; out0             ;
+; |ULA|DisplayULA:inst4|inst9                                                     ; |ULA|DisplayULA:inst4|inst9                                                     ; out0             ;
+; |ULA|DisplayULA:inst4|inst7                                                     ; |ULA|DisplayULA:inst4|inst7                                                     ; out0             ;
+; |ULA|DisplayULA:inst4|inst27                                                    ; |ULA|DisplayULA:inst4|inst27                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst22                                                    ; |ULA|DisplayULA:inst4|inst22                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst23                                                    ; |ULA|DisplayULA:inst4|inst23                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst21                                                    ; |ULA|DisplayULA:inst4|inst21                                                    ; out0             ;
+; |ULA|DisplayULA:inst4|inst28                                                    ; |ULA|DisplayULA:inst4|inst28                                                    ; out0             ;
+; |ULA|menorque:inst12|inst2                                                      ; |ULA|menorque:inst12|inst2                                                      ; out0             ;
+; |ULA|menorque:inst12|igual:inst1|inst12                                         ; |ULA|menorque:inst12|igual:inst1|inst12                                         ; out0             ;
+; |ULA|menorque:inst12|igual:inst1|inst7                                          ; |ULA|menorque:inst12|igual:inst1|inst7                                          ; out0             ;
+; |ULA|menorque:inst12|igual:inst1|inst6                                          ; |ULA|menorque:inst12|igual:inst1|inst6                                          ; out0             ;
+; |ULA|menorque:inst12|igual:inst1|inst5                                          ; |ULA|menorque:inst12|igual:inst1|inst5                                          ; out0             ;
+; |ULA|menorque:inst12|igual:inst1|inst                                           ; |ULA|menorque:inst12|igual:inst1|inst                                           ; out0             ;
+; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst|inst4     ; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst|inst4     ; out0             ;
+; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst1|inst6    ; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst1|inst6    ; out0             ;
+; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst1|inst4    ; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst1|inst4    ; out0             ;
+; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst1|inst5    ; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst1|inst5    ; out0             ;
+; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst1|inst3    ; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst1|inst3    ; out0             ;
+; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst2|inst6    ; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst2|inst6    ; out0             ;
+; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst2|inst4    ; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst2|inst4    ; out0             ;
+; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst2|inst5    ; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst2|inst5    ; out0             ;
+; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst2|inst3    ; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBit-Bit:inst2|inst3    ; out0             ;
+; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBitSignif:inst10|inst6 ; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBitSignif:inst10|inst6 ; out0             ;
+; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBitSignif:inst10|inst4 ; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBitSignif:inst10|inst4 ; out0             ;
+; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBitSignif:inst10|inst5 ; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBitSignif:inst10|inst5 ; out0             ;
+; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBitSignif:inst10|inst3 ; |ULA|menorque:inst12|maiorQueDiferenciado:inst|comparadorBitSignif:inst10|inst3 ; out0             ;
+; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst|inst4                    ; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst|inst4                    ; out0             ;
+; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst1|inst6                   ; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst1|inst6                   ; out0             ;
+; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst1|inst4                   ; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst1|inst4                   ; out0             ;
+; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst1|inst5                   ; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst1|inst5                   ; out0             ;
+; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst1|inst3                   ; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst1|inst3                   ; out0             ;
+; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst2|inst6                   ; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst2|inst6                   ; out0             ;
+; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst2|inst4                   ; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst2|inst4                   ; out0             ;
+; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst2|inst5                   ; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst2|inst5                   ; out0             ;
+; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst2|inst3                   ; |ULA|maiorQueDiferenciado:inst1|comparadorBit-Bit:inst2|inst3                   ; out0             ;
+; |ULA|maiorQueDiferenciado:inst1|comparadorBitSignif:inst10|inst6                ; |ULA|maiorQueDiferenciado:inst1|comparadorBitSignif:inst10|inst6                ; out0             ;
+; |ULA|maiorQueDiferenciado:inst1|comparadorBitSignif:inst10|inst4                ; |ULA|maiorQueDiferenciado:inst1|comparadorBitSignif:inst10|inst4                ; out0             ;
+; |ULA|maiorQueDiferenciado:inst1|comparadorBitSignif:inst10|inst5                ; |ULA|maiorQueDiferenciado:inst1|comparadorBitSignif:inst10|inst5                ; out0             ;
+; |ULA|maiorQueDiferenciado:inst1|comparadorBitSignif:inst10|inst3                ; |ULA|maiorQueDiferenciado:inst1|comparadorBitSignif:inst10|inst3                ; out0             ;
+; |ULA|igual:inst9|inst12                                                         ; |ULA|igual:inst9|inst12                                                         ; out0             ;
+; |ULA|igual:inst9|inst7                                                          ; |ULA|igual:inst9|inst7                                                          ; out0             ;
+; |ULA|igual:inst9|inst6                                                          ; |ULA|igual:inst9|inst6                                                          ; out0             ;
+; |ULA|igual:inst9|inst5                                                          ; |ULA|igual:inst9|inst5                                                          ; out0             ;
+; |ULA|igual:inst9|inst                                                           ; |ULA|igual:inst9|inst                                                           ; out0             ;
+; |ULA|C2B:inst11|inst1                                                           ; |ULA|C2B:inst11|inst1                                                           ; out0             ;
+; |ULA|C2B:inst11|adder:inst7|inst6                                               ; |ULA|C2B:inst11|adder:inst7|inst6                                               ; out0             ;
+; |ULA|C2B:inst11|adder:inst7|inst                                                ; |ULA|C2B:inst11|adder:inst7|inst                                                ; out0             ;
+; |ULA|C2B:inst11|adder:inst8|inst6                                               ; |ULA|C2B:inst11|adder:inst8|inst6                                               ; out0             ;
+; |ULA|C2B:inst11|adder:inst8|inst                                                ; |ULA|C2B:inst11|adder:inst8|inst                                                ; out0             ;
+; |ULA|C2B:inst11|adder:inst9|inst6                                               ; |ULA|C2B:inst11|adder:inst9|inst6                                               ; out0             ;
+; |ULA|C2B:inst11|adder:inst9|inst                                                ; |ULA|C2B:inst11|adder:inst9|inst                                                ; out0             ;
+; |ULA|subtracter:inst8|C2B:inst|adder:inst7|inst6                                ; |ULA|subtracter:inst8|C2B:inst|adder:inst7|inst6                                ; out0             ;
+; |ULA|subtracter:inst8|C2B:inst|adder:inst7|inst                                 ; |ULA|subtracter:inst8|C2B:inst|adder:inst7|inst                                 ; out0             ;
+; |ULA|subtracter:inst8|C2B:inst|adder:inst8|inst6                                ; |ULA|subtracter:inst8|C2B:inst|adder:inst8|inst6                                ; out0             ;
+; |ULA|subtracter:inst8|C2B:inst|adder:inst8|inst                                 ; |ULA|subtracter:inst8|C2B:inst|adder:inst8|inst                                 ; out0             ;
+; |ULA|subtracter:inst8|C2B:inst|adder:inst9|inst6                                ; |ULA|subtracter:inst8|C2B:inst|adder:inst9|inst6                                ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|inst5                                     ; |ULA|subtracter:inst8|fulladder:inst2|inst5                                     ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst4|inst5                         ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst4|inst5                         ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst4|inst3                         ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst4|inst3                         ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst3|inst5                         ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst3|inst5                         ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst3|inst6                         ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst3|inst6                         ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst3|inst7                         ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst3|inst7                         ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst3|inst3                         ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst3|inst3                         ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst3|inst4                         ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst3|inst4                         ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst3|inst                          ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst3|inst                          ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst|inst5                          ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst|inst5                          ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst|inst6                          ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst|inst6                          ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst|inst7                          ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst|inst7                          ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst|inst3                          ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst|inst3                          ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst|inst4                          ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst|inst4                          ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst|inst                           ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst|inst                           ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst2|inst5                         ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst2|inst5                         ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst2|inst6                         ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst2|inst6                         ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst2|inst7                         ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst2|inst7                         ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst2|inst3                         ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst2|inst3                         ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst2|inst4                         ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst2|inst4                         ; out0             ;
+; |ULA|subtracter:inst8|fulladder:inst2|adder:inst2|inst                          ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst2|inst                          ; out0             ;
+; |ULA|fulladder:inst10|inst5                                                     ; |ULA|fulladder:inst10|inst5                                                     ; out0             ;
+; |ULA|fulladder:inst10|adder:inst4|inst5                                         ; |ULA|fulladder:inst10|adder:inst4|inst5                                         ; out0             ;
+; |ULA|fulladder:inst10|adder:inst4|inst3                                         ; |ULA|fulladder:inst10|adder:inst4|inst3                                         ; out0             ;
+; |ULA|fulladder:inst10|adder:inst3|inst5                                         ; |ULA|fulladder:inst10|adder:inst3|inst5                                         ; out0             ;
+; |ULA|fulladder:inst10|adder:inst3|inst6                                         ; |ULA|fulladder:inst10|adder:inst3|inst6                                         ; out0             ;
+; |ULA|fulladder:inst10|adder:inst3|inst7                                         ; |ULA|fulladder:inst10|adder:inst3|inst7                                         ; out0             ;
+; |ULA|fulladder:inst10|adder:inst3|inst3                                         ; |ULA|fulladder:inst10|adder:inst3|inst3                                         ; out0             ;
+; |ULA|fulladder:inst10|adder:inst3|inst4                                         ; |ULA|fulladder:inst10|adder:inst3|inst4                                         ; out0             ;
+; |ULA|fulladder:inst10|adder:inst3|inst                                          ; |ULA|fulladder:inst10|adder:inst3|inst                                          ; out0             ;
+; |ULA|fulladder:inst10|adder:inst|inst5                                          ; |ULA|fulladder:inst10|adder:inst|inst5                                          ; out0             ;
+; |ULA|fulladder:inst10|adder:inst|inst6                                          ; |ULA|fulladder:inst10|adder:inst|inst6                                          ; out0             ;
+; |ULA|fulladder:inst10|adder:inst|inst7                                          ; |ULA|fulladder:inst10|adder:inst|inst7                                          ; out0             ;
+; |ULA|fulladder:inst10|adder:inst|inst3                                          ; |ULA|fulladder:inst10|adder:inst|inst3                                          ; out0             ;
+; |ULA|fulladder:inst10|adder:inst|inst4                                          ; |ULA|fulladder:inst10|adder:inst|inst4                                          ; out0             ;
+; |ULA|fulladder:inst10|adder:inst|inst                                           ; |ULA|fulladder:inst10|adder:inst|inst                                           ; out0             ;
+; |ULA|fulladder:inst10|adder:inst2|inst5                                         ; |ULA|fulladder:inst10|adder:inst2|inst5                                         ; out0             ;
+; |ULA|fulladder:inst10|adder:inst2|inst6                                         ; |ULA|fulladder:inst10|adder:inst2|inst6                                         ; out0             ;
+; |ULA|fulladder:inst10|adder:inst2|inst7                                         ; |ULA|fulladder:inst10|adder:inst2|inst7                                         ; out0             ;
+; |ULA|fulladder:inst10|adder:inst2|inst3                                         ; |ULA|fulladder:inst10|adder:inst2|inst3                                         ; out0             ;
+; |ULA|fulladder:inst10|adder:inst2|inst4                                         ; |ULA|fulladder:inst10|adder:inst2|inst4                                         ; out0             ;
+; |ULA|fulladder:inst10|adder:inst2|inst                                          ; |ULA|fulladder:inst10|adder:inst2|inst                                          ; out0             ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+-------------------------------------------------+
-; Missing 1-Value Coverage                        ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
++--------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |ULA|Overflow                         ; |ULA|Overflow                         ; pin_out          ;
+; |ULA|S[2]                             ; |ULA|S[2]                             ; out              ;
+; |ULA|S[1]                             ; |ULA|S[1]                             ; out              ;
+; |ULA|S[0]                             ; |ULA|S[0]                             ; out              ;
+; |ULA|BitR                             ; |ULA|BitR                             ; pin_out          ;
+; |ULA|R[6]                             ; |ULA|R[6]                             ; pin_out          ;
+; |ULA|R[5]                             ; |ULA|R[5]                             ; pin_out          ;
+; |ULA|R[4]                             ; |ULA|R[4]                             ; pin_out          ;
+; |ULA|R[3]                             ; |ULA|R[3]                             ; pin_out          ;
+; |ULA|R[2]                             ; |ULA|R[2]                             ; pin_out          ;
+; |ULA|R[1]                             ; |ULA|R[1]                             ; pin_out          ;
+; |ULA|mux5:inst2|inst17                ; |ULA|mux5:inst2|inst17                ; out0             ;
+; |ULA|mux5:inst2|inst15                ; |ULA|mux5:inst2|inst15                ; out0             ;
+; |ULA|mux5:inst2|inst16                ; |ULA|mux5:inst2|inst16                ; out0             ;
+; |ULA|mux5:inst2|inst5                 ; |ULA|mux5:inst2|inst5                 ; out0             ;
+; |ULA|mux5:inst2|inst14                ; |ULA|mux5:inst2|inst14                ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst8|inst  ; |ULA|mux5:inst2|bloconovo:inst8|inst  ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst8|inst2 ; |ULA|mux5:inst2|bloconovo:inst8|inst2 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst8|inst3 ; |ULA|mux5:inst2|bloconovo:inst8|inst3 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst8|inst4 ; |ULA|mux5:inst2|bloconovo:inst8|inst4 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst1|inst  ; |ULA|mux5:inst2|bloconovo:inst1|inst  ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst1|inst2 ; |ULA|mux5:inst2|bloconovo:inst1|inst2 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst1|inst3 ; |ULA|mux5:inst2|bloconovo:inst1|inst3 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst1|inst4 ; |ULA|mux5:inst2|bloconovo:inst1|inst4 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst6|inst  ; |ULA|mux5:inst2|bloconovo:inst6|inst  ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst6|inst2 ; |ULA|mux5:inst2|bloconovo:inst6|inst2 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst6|inst3 ; |ULA|mux5:inst2|bloconovo:inst6|inst3 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst6|inst4 ; |ULA|mux5:inst2|bloconovo:inst6|inst4 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst4|inst  ; |ULA|mux5:inst2|bloconovo:inst4|inst  ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst4|inst2 ; |ULA|mux5:inst2|bloconovo:inst4|inst2 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst4|inst3 ; |ULA|mux5:inst2|bloconovo:inst4|inst3 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst4|inst4 ; |ULA|mux5:inst2|bloconovo:inst4|inst4 ; out0             ;
+; |ULA|mux3:inst|inst13                 ; |ULA|mux3:inst|inst13                 ; out0             ;
+; |ULA|mux3:inst|inst5                  ; |ULA|mux3:inst|inst5                  ; out0             ;
+; |ULA|mux3:inst|inst6                  ; |ULA|mux3:inst|inst6                  ; out0             ;
+; |ULA|mux3:inst|inst4                  ; |ULA|mux3:inst|inst4                  ; out0             ;
+; |ULA|mux3:inst14|inst13               ; |ULA|mux3:inst14|inst13               ; out0             ;
+; |ULA|mux3:inst14|inst5                ; |ULA|mux3:inst14|inst5                ; out0             ;
+; |ULA|mux3:inst14|inst6                ; |ULA|mux3:inst14|inst6                ; out0             ;
+; |ULA|mux3:inst14|inst4                ; |ULA|mux3:inst14|inst4                ; out0             ;
++---------------------------------------+---------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+-------------------------------------------------+
-; Missing 0-Value Coverage                        ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
++--------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |ULA|Overflow                         ; |ULA|Overflow                         ; pin_out          ;
+; |ULA|S[2]                             ; |ULA|S[2]                             ; out              ;
+; |ULA|S[1]                             ; |ULA|S[1]                             ; out              ;
+; |ULA|S[0]                             ; |ULA|S[0]                             ; out              ;
+; |ULA|BitR                             ; |ULA|BitR                             ; pin_out          ;
+; |ULA|R[6]                             ; |ULA|R[6]                             ; pin_out          ;
+; |ULA|R[5]                             ; |ULA|R[5]                             ; pin_out          ;
+; |ULA|R[4]                             ; |ULA|R[4]                             ; pin_out          ;
+; |ULA|R[3]                             ; |ULA|R[3]                             ; pin_out          ;
+; |ULA|R[2]                             ; |ULA|R[2]                             ; pin_out          ;
+; |ULA|R[1]                             ; |ULA|R[1]                             ; pin_out          ;
+; |ULA|mux5:inst2|inst17                ; |ULA|mux5:inst2|inst17                ; out0             ;
+; |ULA|mux5:inst2|inst15                ; |ULA|mux5:inst2|inst15                ; out0             ;
+; |ULA|mux5:inst2|inst16                ; |ULA|mux5:inst2|inst16                ; out0             ;
+; |ULA|mux5:inst2|inst5                 ; |ULA|mux5:inst2|inst5                 ; out0             ;
+; |ULA|mux5:inst2|inst14                ; |ULA|mux5:inst2|inst14                ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst8|inst  ; |ULA|mux5:inst2|bloconovo:inst8|inst  ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst8|inst2 ; |ULA|mux5:inst2|bloconovo:inst8|inst2 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst8|inst3 ; |ULA|mux5:inst2|bloconovo:inst8|inst3 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst8|inst4 ; |ULA|mux5:inst2|bloconovo:inst8|inst4 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst1|inst  ; |ULA|mux5:inst2|bloconovo:inst1|inst  ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst1|inst2 ; |ULA|mux5:inst2|bloconovo:inst1|inst2 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst1|inst3 ; |ULA|mux5:inst2|bloconovo:inst1|inst3 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst1|inst4 ; |ULA|mux5:inst2|bloconovo:inst1|inst4 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst6|inst  ; |ULA|mux5:inst2|bloconovo:inst6|inst  ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst6|inst2 ; |ULA|mux5:inst2|bloconovo:inst6|inst2 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst6|inst3 ; |ULA|mux5:inst2|bloconovo:inst6|inst3 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst6|inst4 ; |ULA|mux5:inst2|bloconovo:inst6|inst4 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst4|inst  ; |ULA|mux5:inst2|bloconovo:inst4|inst  ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst4|inst2 ; |ULA|mux5:inst2|bloconovo:inst4|inst2 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst4|inst3 ; |ULA|mux5:inst2|bloconovo:inst4|inst3 ; out0             ;
+; |ULA|mux5:inst2|bloconovo:inst4|inst4 ; |ULA|mux5:inst2|bloconovo:inst4|inst4 ; out0             ;
+; |ULA|mux3:inst|inst13                 ; |ULA|mux3:inst|inst13                 ; out0             ;
+; |ULA|mux3:inst|inst5                  ; |ULA|mux3:inst|inst5                  ; out0             ;
+; |ULA|mux3:inst|inst6                  ; |ULA|mux3:inst|inst6                  ; out0             ;
+; |ULA|mux3:inst|inst4                  ; |ULA|mux3:inst|inst4                  ; out0             ;
+; |ULA|mux3:inst14|inst13               ; |ULA|mux3:inst14|inst13               ; out0             ;
+; |ULA|mux3:inst14|inst5                ; |ULA|mux3:inst14|inst5                ; out0             ;
+; |ULA|mux3:inst14|inst6                ; |ULA|mux3:inst14|inst6                ; out0             ;
+; |ULA|mux3:inst14|inst4                ; |ULA|mux3:inst14|inst4                ; out0             ;
++---------------------------------------+---------------------------------------+------------------+
 
 
 +---------------------+
@@ -164,17 +378,17 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Apr 09 00:43:11 2019
+    Info: Processing started: Thu Apr 18 14:28:52 2019
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ULA -c ULA
-Info: Using vector source file "C:/Users/igors/OneDrive/Área de Trabalho/projetoSD/igor/quartus/A.vwf"
+Info: Using vector source file "C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/Testes.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 6260
+Info: Simulation coverage is      79.38 %
+Info: Number of transitions in simulation is 38863
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 164 megabytes
-    Info: Processing ended: Tue Apr 09 00:43:11 2019
+    Info: Processing ended: Thu Apr 18 14:28:52 2019
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

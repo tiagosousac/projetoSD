@@ -1,5 +1,5 @@
 Flow report for ULA
-Tue Apr 09 00:42:07 2019
+Thu Apr 18 14:28:18 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-------------------------------+----------------------------------------------+
-; Flow Status                   ; Successful - Tue Apr 09 00:42:07 2019        ;
+; Flow Status                   ; Successful - Thu Apr 18 14:28:18 2019        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; ULA                                          ;
-; Top-level Entity Name         ; maiorQueDiferenciado                         ;
+; Top-level Entity Name         ; ULA                                          ;
 ; Family                        ; Stratix II                                   ;
 ; Met timing requirements       ; Yes                                          ;
 ; Logic utilization             ; < 1 %                                        ;
-;     Combinational ALUTs       ; 2 / 12,480 ( < 1 % )                         ;
+;     Combinational ALUTs       ; 35 / 12,480 ( < 1 % )                        ;
 ;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                           ;
 ; Total registers               ; 0                                            ;
-; Total pins                    ; 9 / 343 ( 3 % )                              ;
+; Total pins                    ; 31 / 343 ( 9 % )                             ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0 / 419,328 ( 0 % )                          ;
 ; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                               ;
@@ -64,23 +64,22 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/09/2019 00:41:58 ;
+; Start date & time ; 04/18/2019 14:28:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ULA                 ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                             ;
-+------------------------------------+---------------------------------+---------------+----------------------+----------------+
-; Assignment Name                    ; Value                           ; Default Value ; Entity Name          ; Section Id     ;
-+------------------------------------+---------------------------------+---------------+----------------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 229335801198145.155478131701468 ; --            ; --                   ; --             ;
-; PARTITION_COLOR                    ; 16764057                        ; --            ; maiorQueDiferenciado ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; maiorQueDiferenciado ; Top            ;
-; TOP_LEVEL_ENTITY                   ; maiorQueDiferenciado            ; ULA           ; --                   ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --            ; --                   ; eda_blast_fpga ;
-+------------------------------------+---------------------------------+---------------+----------------------+----------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                    ;
++------------------------------------+---------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+---------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 229335801198145.155560848605428 ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                        ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; --          ; Top            ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+---------------------------------+---------------+-------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -88,11 +87,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 239 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:03     ; 1.0                     ; 283 MB              ; 00:00:03                           ;
+; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 239 MB              ; 00:00:02                           ;
+; Fitter                  ; 00:00:03     ; 1.0                     ; 281 MB              ; 00:00:03                           ;
 ; Assembler               ; 00:00:01     ; 1.0                     ; 249 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 179 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:05     ; --                      ; --                  ; 00:00:05                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 178 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:06     ; --                      ; --                  ; 00:00:06                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

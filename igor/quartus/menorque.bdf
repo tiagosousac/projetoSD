@@ -159,9 +159,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 368 248 464 344)
-	(text "maiorque" (rect 5 0 56 14)(font "Arial" (font_size 8)))
-	(text "inst3" (rect 8 80 31 92)(font "Arial" ))
+	(rect 360 248 456 344)
+	(text "maiorQueDiferenciado" (rect 5 0 131 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -193,23 +193,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 184 280)
-	(pt 368 280)
-	(bus)
-)
-(connector
-	(pt 152 296)
-	(pt 368 296)
-	(bus)
-)
-(connector
 	(pt 184 400)
 	(pt 368 400)
-	(bus)
-)
-(connector
-	(pt 184 280)
-	(pt 184 400)
 	(bus)
 )
 (connector
@@ -223,11 +208,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 152 296)
-	(pt 152 416)
-	(bus)
-)
-(connector
 	(pt 152 416)
 	(pt 152 480)
 	(bus)
@@ -235,16 +215,6 @@ applicable agreement for further details.
 (connector
 	(pt 464 400)
 	(pt 496 400)
-)
-(connector
-	(pt 184 240)
-	(pt 184 280)
-	(bus)
-)
-(connector
-	(pt 152 240)
-	(pt 152 296)
-	(bus)
 )
 (connector
 	(pt 496 400)
@@ -271,12 +241,42 @@ applicable agreement for further details.
 	(pt 544 312)
 )
 (connector
-	(pt 464 280)
+	(pt 184 280)
+	(pt 360 280)
+	(bus)
+)
+(connector
+	(pt 152 296)
+	(pt 360 296)
+	(bus)
+)
+(connector
+	(pt 496 312)
 	(pt 496 280)
 )
 (connector
+	(pt 184 240)
+	(pt 184 280)
+	(bus)
+)
+(connector
+	(pt 184 280)
+	(pt 184 400)
+	(bus)
+)
+(connector
+	(pt 152 240)
+	(pt 152 296)
+	(bus)
+)
+(connector
+	(pt 152 296)
+	(pt 152 416)
+	(bus)
+)
+(connector
+	(pt 456 280)
 	(pt 496 280)
-	(pt 496 312)
 )
 (junction (pt 184 280))
 (junction (pt 152 296))
