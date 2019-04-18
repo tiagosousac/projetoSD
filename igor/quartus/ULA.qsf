@@ -49,27 +49,19 @@ set_global_assignment -name LL_ROOT_REGION ON -entity ULA -section_id "Root Regi
 set_global_assignment -name LL_MEMBER_STATE LOCKED -entity ULA -section_id "Root Region"
 set_global_assignment -name BDF_FILE fulladder.bdf
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name VECTOR_WAVEFORM_FILE fulladder_teste.vwf
 set_global_assignment -name BDF_FILE c2b.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE c2b.vwf
 set_global_assignment -name BDF_FILE subtracter.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE subtracter.vwf
 set_global_assignment -name BDF_FILE AandB.bdf
 set_global_assignment -name BDF_FILE igual.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE maiorque.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE testeman.vwf
 set_global_assignment -name BDF_FILE menorque.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE a.vwf
 set_global_assignment -name BDF_FILE maiorque.bdf
 set_global_assignment -name BDF_FILE mux2.bdf
 set_global_assignment -name BDF_FILE somador_subtracter.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE somador_subtracter.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ULA.vwf
 set_global_assignment -name BDF_FILE ULA.bdf
 set_global_assignment -name BDF_FILE mux3.bdf
 set_global_assignment -name BDF_FILE mux5.bdf
 set_global_assignment -name BDF_FILE somadorbcd.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE A.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE A.vwf
 set_global_assignment -name BDF_FILE maiorQueDiferenciado.bdf
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
