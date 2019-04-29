@@ -1,5 +1,5 @@
-Quartus II
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Quartus II 64-Bit
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 7
 3700
 OFF
@@ -20,10 +20,44 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
+aXORb
+# storage
+db|ULA.(0).cnf
+db|ULA.(0).cnf
+# case_insensitive
+# source_file
+axorb.bdf
+3ffd77efc3ae49b7c3a3ff29e06335e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+fulladder
+# storage
+db|ULA.(1).cnf
+db|ULA.(1).cnf
+# case_insensitive
+# source_file
+fulladder.bdf
+533971db763f1c5a8c14ced6d5bc73e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
 adder
 # storage
-db|ULA.(3).cnf
-db|ULA.(3).cnf
+db|ULA.(2).cnf
+db|ULA.(2).cnf
 # case_insensitive
 # source_file
 adder.bdf
@@ -33,26 +67,18 @@ adder.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-adder:inst4
-adder:inst2
-adder:inst3
-adder:inst1
-adder:inst9
-adder:inst10
-}
 # macro_sequence
 
 # end
 # entity
-DisplayBCD
+c2b
 # storage
-db|ULA.(0).cnf
-db|ULA.(0).cnf
+db|ULA.(3).cnf
+db|ULA.(3).cnf
 # case_insensitive
 # source_file
-displaybcd.bdf
-a1cfee5238988ae3c5b65f32ef82d7a9
+c2b.bdf
+5516cbfc9aea7ef1ddb4928ae9396eb4
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -62,14 +88,130 @@ AUTO
 
 # end
 # entity
-somadorbcd
+igual
 # storage
-db|ULA.(1).cnf
-db|ULA.(1).cnf
+db|ULA.(4).cnf
+db|ULA.(4).cnf
 # case_insensitive
 # source_file
-somadorbcd.bdf
-54b714a4c4bd9c6c3f68e7d45905e
+igual.bdf
+8f9bc0d9c53fbeb2d12ef39f256a7e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+igual:inst1
+}
+# macro_sequence
+
+# end
+# entity
+AandB
+# storage
+db|ULA.(5).cnf
+db|ULA.(5).cnf
+# case_insensitive
+# source_file
+aandb.bdf
+db5f7083c2fb79ac5a748803320192d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+subtracter
+# storage
+db|ULA.(6).cnf
+db|ULA.(6).cnf
+# case_insensitive
+# source_file
+subtracter.bdf
+2174f74f9f19ad41ffeed5ed64b293a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+maiorQueDiferenciado
+# storage
+db|ULA.(7).cnf
+db|ULA.(7).cnf
+# case_insensitive
+# source_file
+maiorquediferenciado.bdf
+72719bda811da3be3d2f62992a7781
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+maiorQueDiferenciado:inst
+}
+# macro_sequence
+
+# end
+# entity
+comparadorBitSignif
+# storage
+db|ULA.(8).cnf
+db|ULA.(8).cnf
+# case_insensitive
+# source_file
+comparadorbitsignif.bdf
+1cc3c2453b7c3ea7dc0bba81cdf3b7a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+maiorQueDiferenciado:inst|comparadorBitSignif:inst10
+}
+# macro_sequence
+
+# end
+# entity
+comparadorBit-Bit
+# storage
+db|ULA.(9).cnf
+db|ULA.(9).cnf
+# case_insensitive
+# source_file
+comparadorbit-bit.bdf
+418e4dcfe25171d67bb73beae7c15b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+maiorQueDiferenciado:inst|comparadorBit-Bit:inst2
+maiorQueDiferenciado:inst|comparadorBit-Bit:inst1
+maiorQueDiferenciado:inst|comparadorBit-Bit:inst
+}
+# macro_sequence
+
+# end
+# entity
+menorque
+# storage
+db|ULA.(10).cnf
+db|ULA.(10).cnf
+# case_insensitive
+# source_file
+|users|tsc2|desktop|projetosd|igor|quartus|menorque.bdf
+87cc88ae5bd158635aa8ab2ec8935e8
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

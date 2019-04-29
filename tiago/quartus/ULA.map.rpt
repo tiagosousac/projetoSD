@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ULA
-Thu Apr 18 12:06:19 2019
-Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Mon Apr 29 16:24:37 2019
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -37,25 +37,25 @@ applicable agreement for further details.
 
 
 
-+------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                 ;
-+-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Thu Apr 18 12:06:19 2019        ;
-; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
-; Revision Name                 ; ULA                                          ;
-; Top-level Entity Name         ; somadorbcd                                   ;
-; Family                        ; Stratix II                                   ;
-; Logic utilization             ; N/A                                          ;
-;     Combinational ALUTs       ; 12                                           ;
-;     Dedicated logic registers ; 0                                            ;
-; Total registers               ; 0                                            ;
-; Total pins                    ; 14                                           ;
-; Total virtual pins            ; 0                                            ;
-; Total block memory bits       ; 0                                            ;
-; DSP block 9-bit elements      ; 0                                            ;
-; Total PLLs                    ; 0                                            ;
-; Total DLLs                    ; 0                                            ;
-+-------------------------------+----------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-------------------------------+-----------------------------------------------+
+; Analysis & Synthesis Status   ; Successful - Mon Apr 29 16:24:37 2019         ;
+; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
+; Revision Name                 ; ULA                                           ;
+; Top-level Entity Name         ; menorque                                      ;
+; Family                        ; Stratix II                                    ;
+; Logic utilization             ; N/A                                           ;
+;     Combinational ALUTs       ; 2                                             ;
+;     Dedicated logic registers ; 0                                             ;
+; Total registers               ; 0                                             ;
+; Total pins                    ; 9                                             ;
+; Total virtual pins            ; 0                                             ;
+; Total block memory bits       ; 0                                             ;
+; DSP block 9-bit elements      ; 0                                             ;
+; Total PLLs                    ; 0                                             ;
+; Total DLLs                    ; 0                                             ;
++-------------------------------+-----------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; somadorbcd         ; ULA                ;
+; Top-level entity name                                                      ; menorque           ; ULA                ;
 ; Family name                                                                ; Stratix II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -138,80 +138,83 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 2      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                 ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
-; somadorbcd.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tiago - PC/Desktop/Faculdade/projetoSD/tiago/quartus/somadorbcd.bdf ;
-; adder.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tiago - PC/Desktop/Faculdade/projetoSD/tiago/quartus/adder.bdf      ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                           ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+
+; ../../igor/quartus/menorque.bdf  ; yes             ; User Block Diagram/Schematic File  ; D:/Users/tsc2/Desktop/projetoSD/igor/quartus/menorque.bdf              ;
+; comparadorBit-Bit.bdf            ; yes             ; User Block Diagram/Schematic File  ; D:/Users/tsc2/Desktop/projetoSD/tiago/quartus/comparadorBit-Bit.bdf    ;
+; comparadorBitSignif.bdf          ; yes             ; User Block Diagram/Schematic File  ; D:/Users/tsc2/Desktop/projetoSD/tiago/quartus/comparadorBitSignif.bdf  ;
+; maiorQueDiferenciado.bdf         ; yes             ; User Block Diagram/Schematic File  ; D:/Users/tsc2/Desktop/projetoSD/tiago/quartus/maiorQueDiferenciado.bdf ;
+; igual.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/Users/tsc2/Desktop/projetoSD/tiago/quartus/igual.bdf                ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                         ;
-+-----------------------------------------------+---------------------+
-; Resource                                      ; Usage               ;
-+-----------------------------------------------+---------------------+
-; Estimated ALUTs Used                          ; 12                  ;
-; Dedicated logic registers                     ; 0                   ;
-;                                               ;                     ;
-; Estimated ALUTs Unavailable                   ; 2                   ;
-;                                               ;                     ;
-; Total combinational functions                 ; 12                  ;
-; Combinational ALUT usage by number of inputs  ;                     ;
-;     -- 7 input functions                      ; 0                   ;
-;     -- 6 input functions                      ; 2                   ;
-;     -- 5 input functions                      ; 2                   ;
-;     -- 4 input functions                      ; 7                   ;
-;     -- <=3 input functions                    ; 1                   ;
-;                                               ;                     ;
-; Combinational ALUTs by mode                   ;                     ;
-;     -- normal mode                            ; 12                  ;
-;     -- extended LUT mode                      ; 0                   ;
-;     -- arithmetic mode                        ; 0                   ;
-;     -- shared arithmetic mode                 ; 0                   ;
-;                                               ;                     ;
-; Estimated ALUT/register pairs used            ; 14                  ;
-;                                               ;                     ;
-; Total registers                               ; 0                   ;
-;     -- Dedicated logic registers              ; 0                   ;
-;     -- I/O registers                          ; 0                   ;
-;                                               ;                     ;
-; Estimated ALMs:  partially or completely used ; 7                   ;
-;                                               ;                     ;
-; I/O pins                                      ; 14                  ;
-; Maximum fan-out node                          ; adder:inst4|inst7~0 ;
-; Maximum fan-out                               ; 5                   ;
-; Total fan-out                                 ; 58                  ;
-; Average fan-out                               ; 2.23                ;
-+-----------------------------------------------+---------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++-----------------------------------------------+---------+
+; Resource                                      ; Usage   ;
++-----------------------------------------------+---------+
+; Estimated ALUTs Used                          ; 2       ;
+; Dedicated logic registers                     ; 0       ;
+;                                               ;         ;
+; Estimated ALUTs Unavailable                   ; 0       ;
+;                                               ;         ;
+; Total combinational functions                 ; 2       ;
+; Combinational ALUT usage by number of inputs  ;         ;
+;     -- 7 input functions                      ; 0       ;
+;     -- 6 input functions                      ; 0       ;
+;     -- 5 input functions                      ; 1       ;
+;     -- 4 input functions                      ; 1       ;
+;     -- <=3 input functions                    ; 0       ;
+;                                               ;         ;
+; Combinational ALUTs by mode                   ;         ;
+;     -- normal mode                            ; 2       ;
+;     -- extended LUT mode                      ; 0       ;
+;     -- arithmetic mode                        ; 0       ;
+;     -- shared arithmetic mode                 ; 0       ;
+;                                               ;         ;
+; Estimated ALUT/register pairs used            ; 2       ;
+;                                               ;         ;
+; Total registers                               ; 0       ;
+;     -- Dedicated logic registers              ; 0       ;
+;     -- I/O registers                          ; 0       ;
+;                                               ;         ;
+; Estimated ALMs:  partially or completely used ; 1       ;
+;                                               ;         ;
+; I/O pins                                      ; 9       ;
+; Maximum fan-out node                          ; inst2~0 ;
+; Maximum fan-out                               ; 1       ;
+; Total fan-out                                 ; 10      ;
+; Average fan-out                               ; 0.91    ;
++-----------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+--------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+--------------------------+--------------+
-; |somadorbcd                ; 12 (3)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 14   ; 0            ; |somadorbcd              ; work         ;
-;    |adder:inst10|          ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |somadorbcd|adder:inst10 ; work         ;
-;    |adder:inst1|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |somadorbcd|adder:inst1  ; work         ;
-;    |adder:inst2|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |somadorbcd|adder:inst2  ; work         ;
-;    |adder:inst3|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |somadorbcd|adder:inst3  ; work         ;
-;    |adder:inst4|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |somadorbcd|adder:inst4  ;              ;
-;    |adder:inst9|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |somadorbcd|adder:inst9  ; work         ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+--------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; |menorque                  ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 9    ; 0            ; |menorque           ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -234,10 +237,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II Analysis & Synthesis
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 18 12:06:17 2019
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Mon Apr 29 16:24:36 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Found 1 design units, including 1 entities, in source file /users/tsc2/desktop/projetosd/igor/quartus/menorque.bdf
+    Info: Found entity 1: menorque
 Info: Found 1 design units, including 1 entities, in source file axorb.bdf
     Info: Found entity 1: aXORb
 Info: Found 1 design units, including 1 entities, in source file somadorbcd.bdf
@@ -278,19 +284,22 @@ Info: Found 1 design units, including 1 entities, in source file displaybcd.bdf
     Info: Found entity 1: DisplayBCD
 Info: Found 1 design units, including 1 entities, in source file somadorbcdanddisplay.bdf
     Info: Found entity 1: SomadorBCDandDisplay
-Info: Elaborating entity "somadorbcd" for the top level hierarchy
-Info: Elaborating entity "adder" for hierarchy "adder:inst4"
+Info: Elaborating entity "menorque" for the top level hierarchy
+Info: Elaborating entity "maiorQueDiferenciado" for hierarchy "maiorQueDiferenciado:inst"
+Info: Elaborating entity "comparadorBitSignif" for hierarchy "maiorQueDiferenciado:inst|comparadorBitSignif:inst10"
+Info: Elaborating entity "comparadorBit-Bit" for hierarchy "maiorQueDiferenciado:inst|comparadorBit-Bit:inst2"
+Info: Elaborating entity "igual" for hierarchy "igual:inst1"
 Warning: Ignored assignments for entity "ULA" -- entity does not exist in design
     Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity ULA -section_id "Root Region" was ignored
     Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity ULA -section_id "Root Region" was ignored
-Info: Implemented 26 device resources after synthesis - the final resource count might be different
+Info: Implemented 11 device resources after synthesis - the final resource count might be different
     Info: Implemented 8 input pins
-    Info: Implemented 6 output pins
-    Info: Implemented 12 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 239 megabytes
-    Info: Processing ended: Thu Apr 18 12:06:19 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Implemented 1 output pins
+    Info: Implemented 2 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 344 megabytes
+    Info: Processing ended: Mon Apr 29 16:24:37 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
