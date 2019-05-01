@@ -521,7 +521,7 @@ applicable agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect 992 664 1120 760)
+	(rect 1000 664 1128 760)
 	(text "DisplayULA" (rect 5 0 71 14)(font "Arial" (font_size 8)))
 	(text "inst4" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -930,25 +930,9 @@ applicable agreement for further details.
 	(pt 464 560)
 )
 (connector
-	(pt 944 696)
-	(pt 992 696)
-	(bus)
-)
-(connector
-	(text "Resposta[3..0]" (rect 928 624 940 697)(font "Arial" )(vertical))
-	(pt 944 632)
-	(pt 944 696)
-	(bus)
-)
-(connector
 	(text "Resposta[3]" (rect 952 784 1012 796)(font "Arial" ))
 	(pt 944 800)
 	(pt 1016 800)
-)
-(connector
-	(pt 944 696)
-	(pt 944 800)
-	(bus)
 )
 (connector
 	(pt 944 800)
@@ -961,13 +945,29 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1120 696)
-	(pt 1192 696)
+	(pt 1128 800)
+	(pt 1192 800)
 	(bus)
 )
 (connector
-	(pt 1128 800)
-	(pt 1192 800)
+	(pt 1192 696)
+	(pt 1128 696)
+	(bus)
+)
+(connector
+	(text "Resposta[3..0]" (rect 928 624 940 697)(font "Arial" )(vertical))
+	(pt 944 632)
+	(pt 944 696)
+	(bus)
+)
+(connector
+	(pt 944 696)
+	(pt 944 800)
+	(bus)
+)
+(connector
+	(pt 944 696)
+	(pt 1000 696)
 	(bus)
 )
 (junction (pt 296 144))

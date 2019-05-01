@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.1"))
 (symbol
 	(rect 16 16 176 112)
-	(text "bloconovo" (rect 5 0 64 14)(font "Arial" (font_size 8)))
+	(text "AndBitVector" (rect 5 0 81 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)

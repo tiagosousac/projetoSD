@@ -628,29 +628,29 @@ S[2] => inst22.IN0
 S[2] => inst16.IN0
 S[2] => inst.IN0
 S[2] => inst20.IN0
-xor[0] => bloconovo:inst4.R[0]
-xor[1] => bloconovo:inst4.R[1]
-xor[2] => bloconovo:inst4.R[2]
-xor[3] => bloconovo:inst4.R[3]
-c2b[0] => bloconovo:inst7.R[0]
-c2b[1] => bloconovo:inst7.R[1]
-c2b[2] => bloconovo:inst7.R[2]
-c2b[3] => bloconovo:inst7.R[3]
-and[0] => bloconovo:inst6.R[0]
-and[1] => bloconovo:inst6.R[1]
-and[2] => bloconovo:inst6.R[2]
-and[3] => bloconovo:inst6.R[3]
-fulladder[0] => bloconovo:inst1.R[0]
-fulladder[1] => bloconovo:inst1.R[1]
-fulladder[2] => bloconovo:inst1.R[2]
-fulladder[3] => bloconovo:inst1.R[3]
-subtracter[0] => bloconovo:inst8.R[0]
-subtracter[1] => bloconovo:inst8.R[1]
-subtracter[2] => bloconovo:inst8.R[2]
-subtracter[3] => bloconovo:inst8.R[3]
+xor[0] => AndBitVector:inst8.R[0]
+xor[1] => AndBitVector:inst8.R[1]
+xor[2] => AndBitVector:inst8.R[2]
+xor[3] => AndBitVector:inst8.R[3]
+c2b[0] => AndBitVector:inst6.R[0]
+c2b[1] => AndBitVector:inst6.R[1]
+c2b[2] => AndBitVector:inst6.R[2]
+c2b[3] => AndBitVector:inst6.R[3]
+and[0] => AndBitVector:inst7.R[0]
+and[1] => AndBitVector:inst7.R[1]
+and[2] => AndBitVector:inst7.R[2]
+and[3] => AndBitVector:inst7.R[3]
+fulladder[0] => AndBitVector:inst1.R[0]
+fulladder[1] => AndBitVector:inst1.R[1]
+fulladder[2] => AndBitVector:inst1.R[2]
+fulladder[3] => AndBitVector:inst1.R[3]
+subtracter[0] => AndBitVector:inst4.R[0]
+subtracter[1] => AndBitVector:inst4.R[1]
+subtracter[2] => AndBitVector:inst4.R[2]
+subtracter[3] => AndBitVector:inst4.R[3]
 
 
-|ULA|mux5:inst2|bloconovo:inst4
+|ULA|mux5:inst2|AndBitVector:inst8
 Output[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Output[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Output[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
@@ -665,7 +665,7 @@ S => inst3.IN1
 S => inst4.IN1
 
 
-|ULA|mux5:inst2|bloconovo:inst7
+|ULA|mux5:inst2|AndBitVector:inst6
 Output[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Output[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Output[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
@@ -680,7 +680,7 @@ S => inst3.IN1
 S => inst4.IN1
 
 
-|ULA|mux5:inst2|bloconovo:inst6
+|ULA|mux5:inst2|AndBitVector:inst7
 Output[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Output[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Output[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
@@ -695,7 +695,7 @@ S => inst3.IN1
 S => inst4.IN1
 
 
-|ULA|mux5:inst2|bloconovo:inst1
+|ULA|mux5:inst2|AndBitVector:inst1
 Output[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Output[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Output[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
@@ -710,7 +710,7 @@ S => inst3.IN1
 S => inst4.IN1
 
 
-|ULA|mux5:inst2|bloconovo:inst8
+|ULA|mux5:inst2|AndBitVector:inst4
 Output[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Output[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Output[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
@@ -764,13 +764,5 @@ D[4] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 D[5] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 D[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 S[3] => inst.IN0
-
-
-|ULA|mux2:inst13
-R <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-S => inst3.IN0
-S => inst4.IN0
-B => inst3.IN1
-A => inst.IN0
 
 

@@ -1,5 +1,5 @@
 Fitter report for ULA
-Thu Apr 18 14:28:12 2019
+Wed May 01 20:27:19 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +-------------------------------+----------------------------------------------+
-; Fitter Status                 ; Successful - Thu Apr 18 14:28:12 2019        ;
+; Fitter Status                 ; Successful - Wed May 01 20:27:19 2019        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; ULA                                          ;
 ; Top-level Entity Name         ; ULA                                          ;
@@ -909,8 +909,8 @@ Note: User assignments will override these defaults. The user specified values a
 ;    |mux3:inst14|           ; 3 (3)               ; 3 (3)  ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)                          ; 0 (0)              ; 0 (0)                         ; |ULA|mux3:inst14                                 ;              ;
 ;    |mux3:inst|             ; 6 (6)               ; 5 (5)  ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)                          ; 0 (0)              ; 0 (0)                         ; |ULA|mux3:inst                                   ; work         ;
 ;    |mux5:inst2|            ; 12 (8)              ; 11 (7) ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 12 (8)                         ; 0 (0)              ; 0 (0)                         ; |ULA|mux5:inst2                                  ; work         ;
-;       |bloconovo:inst1|    ; 3 (3)               ; 3 (3)  ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)                          ; 0 (0)              ; 0 (0)                         ; |ULA|mux5:inst2|bloconovo:inst1                  ; work         ;
-;       |bloconovo:inst8|    ; 1 (1)               ; 1 (1)  ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)                          ; 0 (0)              ; 0 (0)                         ; |ULA|mux5:inst2|bloconovo:inst8                  ; work         ;
+;       |AndBitVector:inst1| ; 3 (3)               ; 3 (3)  ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)                          ; 0 (0)              ; 0 (0)                         ; |ULA|mux5:inst2|AndBitVector:inst1               ; work         ;
+;       |AndBitVector:inst4| ; 1 (1)               ; 1 (1)  ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)                          ; 0 (0)              ; 0 (0)                         ; |ULA|mux5:inst2|AndBitVector:inst4               ; work         ;
 ;    |subtracter:inst8|      ; 3 (0)               ; 3 (0)  ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (0)                          ; 0 (0)              ; 0 (0)                         ; |ULA|subtracter:inst8                            ; work         ;
 ;       |C2B:inst|           ; 1 (0)               ; 1 (0)  ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (0)                          ; 0 (0)              ; 0 (0)                         ; |ULA|subtracter:inst8|C2B:inst                   ; work         ;
 ;          |adder:inst8|     ; 1 (1)               ; 1 (1)  ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)                          ; 0 (0)              ; 0 (0)                         ; |ULA|subtracter:inst8|C2B:inst|adder:inst8       ; work         ;
@@ -968,10 +968,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mux3:inst14|inst13~1                                ; 0                 ; 7       ;
 ;      - mux3:inst|inst13~0                                  ; 0                 ; 7       ;
 ;      - mux5:inst2|inst11~0                                 ; 0                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst2~0                  ; 0                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst8|inst~0                   ; 0                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst2~0               ; 0                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst4|inst~0                ; 0                 ; 7       ;
 ;      - mux5:inst2|inst9~0                                  ; 0                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst~0                   ; 0                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst~0                ; 0                 ; 7       ;
 ;      - mux5:inst2|inst12~0                                 ; 0                 ; 7       ;
 ;      - mux5:inst2|inst10~2                                 ; 0                 ; 7       ;
 ; B[2]                                                       ;                   ;         ;
@@ -982,9 +982,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mux3:inst|inst13~1                                  ; 1                 ; 7       ;
 ;      - mux3:inst|inst13~3                                  ; 1                 ; 7       ;
 ;      - mux5:inst2|inst11~0                                 ; 1                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst2~0                  ; 1                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst2~0               ; 1                 ; 7       ;
 ;      - subtracter:inst8|fulladder:inst2|adder:inst|inst5   ; 1                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst~1                   ; 1                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst~1                ; 1                 ; 7       ;
 ; B[1]                                                       ;                   ;         ;
 ;      - subtracter:inst8|C2B:inst|adder:inst8|inst          ; 0                 ; 7       ;
 ;      - fulladder:inst10|adder:inst3|inst7~0                ; 0                 ; 7       ;
@@ -994,7 +994,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mux3:inst|inst13~3                                  ; 0                 ; 7       ;
 ;      - mux5:inst2|inst11~0                                 ; 0                 ; 7       ;
 ;      - subtracter:inst8|fulladder:inst2|adder:inst|inst5   ; 0                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst~1                   ; 0                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst~1                ; 0                 ; 7       ;
 ;      - mux5:inst2|inst10~0                                 ; 0                 ; 7       ;
 ;      - mux5:inst2|inst10~1                                 ; 0                 ; 7       ;
 ; B[0]                                                       ;                   ;         ;
@@ -1007,7 +1007,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mux5:inst2|inst11~0                                 ; 1                 ; 7       ;
 ;      - subtracter:inst8|fulladder:inst2|adder:inst|inst5   ; 1                 ; 7       ;
 ;      - mux5:inst2|inst9~0                                  ; 1                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst~1                   ; 1                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst~1                ; 1                 ; 7       ;
 ;      - mux5:inst2|inst10~0                                 ; 1                 ; 7       ;
 ;      - mux5:inst2|inst10~1                                 ; 1                 ; 7       ;
 ; S[2]                                                       ;                   ;         ;
@@ -1015,10 +1015,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mux3:inst14|inst13~0                                ; 0                 ; 7       ;
 ;      - mux3:inst|inst13~0                                  ; 0                 ; 7       ;
 ;      - mux5:inst2|inst11~0                                 ; 0                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst2~0                  ; 0                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst8|inst~0                   ; 0                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst2~0               ; 0                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst4|inst~0                ; 0                 ; 7       ;
 ;      - mux5:inst2|inst9~0                                  ; 0                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst~0                   ; 0                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst~0                ; 0                 ; 7       ;
 ;      - mux5:inst2|inst12~0                                 ; 0                 ; 7       ;
 ;      - mux5:inst2|inst10~0                                 ; 0                 ; 7       ;
 ;      - mux5:inst2|inst10~1                                 ; 0                 ; 7       ;
@@ -1026,11 +1026,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mux3:inst14|inst5~0                                 ; 0                 ; 7       ;
 ;      - mux3:inst14|inst13~0                                ; 0                 ; 7       ;
 ;      - mux3:inst|inst13~0                                  ; 0                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst2~0                  ; 0                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst8|inst~0                   ; 0                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst2~0               ; 0                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst4|inst~0                ; 0                 ; 7       ;
 ;      - mux5:inst2|inst11~1                                 ; 0                 ; 7       ;
 ;      - mux5:inst2|inst9~0                                  ; 0                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst~0                   ; 0                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst~0                ; 0                 ; 7       ;
 ;      - mux5:inst2|inst12~0                                 ; 0                 ; 7       ;
 ;      - mux5:inst2|inst10~0                                 ; 0                 ; 7       ;
 ;      - mux5:inst2|inst10~1                                 ; 0                 ; 7       ;
@@ -1041,9 +1041,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mux3:inst|inst13~1                                  ; 1                 ; 7       ;
 ;      - mux3:inst|inst13~3                                  ; 1                 ; 7       ;
 ;      - mux5:inst2|inst11~0                                 ; 1                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst2~0                  ; 1                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst2~0               ; 1                 ; 7       ;
 ;      - subtracter:inst8|fulladder:inst2|adder:inst|inst5   ; 1                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst~1                   ; 1                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst~1                ; 1                 ; 7       ;
 ; A[0]                                                       ;                   ;         ;
 ;      - fulladder:inst10|adder:inst3|inst7~0                ; 1                 ; 7       ;
 ;      - fulladder:inst10|adder:inst|inst7~0                 ; 1                 ; 7       ;
@@ -1052,7 +1052,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mux3:inst|inst13~4                                  ; 1                 ; 7       ;
 ;      - subtracter:inst8|fulladder:inst2|adder:inst|inst5   ; 1                 ; 7       ;
 ;      - mux5:inst2|inst9~0                                  ; 1                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst~1                   ; 1                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst~1                ; 1                 ; 7       ;
 ;      - mux5:inst2|inst10~0                                 ; 1                 ; 7       ;
 ;      - mux5:inst2|inst10~1                                 ; 1                 ; 7       ;
 ; A[1]                                                       ;                   ;         ;
@@ -1062,7 +1062,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mux3:inst|inst13~1                                  ; 1                 ; 7       ;
 ;      - mux3:inst|inst13~3                                  ; 1                 ; 7       ;
 ;      - subtracter:inst8|fulladder:inst2|adder:inst|inst5   ; 1                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst~1                   ; 1                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst~1                ; 1                 ; 7       ;
 ;      - mux5:inst2|inst10~0                                 ; 1                 ; 7       ;
 ;      - mux5:inst2|inst10~1                                 ; 1                 ; 7       ;
 ; A[3]                                                       ;                   ;         ;
@@ -1070,13 +1070,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - mux3:inst14|inst13~0                                ; 0                 ; 7       ;
 ;      - mux3:inst|inst13~0                                  ; 0                 ; 7       ;
 ;      - fulladder:inst10|adder:inst2|inst5~0                ; 0                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst~0                   ; 0                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst~0                ; 0                 ; 7       ;
 ;      - mux5:inst2|inst12~0                                 ; 0                 ; 7       ;
 ; B[3]                                                       ;                   ;         ;
 ;      - mux3:inst14|inst13~0                                ; 1                 ; 7       ;
 ;      - mux3:inst|inst13~0                                  ; 1                 ; 7       ;
 ;      - fulladder:inst10|adder:inst2|inst5~0                ; 1                 ; 7       ;
-;      - mux5:inst2|bloconovo:inst1|inst~0                   ; 1                 ; 7       ;
+;      - mux5:inst2|AndBitVector:inst1|inst~0                ; 1                 ; 7       ;
 ;      - mux5:inst2|inst12~0                                 ; 1                 ; 7       ;
 ;      - mux3:inst14|inst13~1                                ; 1                 ; 7       ;
 +------------------------------------------------------------+-------------------+---------+
@@ -1104,13 +1104,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; A[3]                                                ; 6       ;
 ; fulladder:inst10|adder:inst2|inst5~0                ; 3       ;
 ; subtracter:inst8|C2B:inst|adder:inst8|inst          ; 3       ;
-; mux5:inst2|bloconovo:inst8|inst~0                   ; 2       ;
+; mux5:inst2|AndBitVector:inst4|inst~0                ; 2       ;
 ; mux3:inst|inst13~1                                  ; 2       ;
 ; subtracter:inst8|fulladder:inst2|adder:inst|inst7~0 ; 2       ;
 ; mux3:inst14|inst5~0                                 ; 2       ;
 ; mux5:inst2|inst10~1                                 ; 1       ;
 ; mux5:inst2|inst10~0                                 ; 1       ;
-; mux5:inst2|bloconovo:inst1|inst~1                   ; 1       ;
+; mux5:inst2|AndBitVector:inst1|inst~1                ; 1       ;
 ; DisplayULA:inst4|inst24                             ; 1       ;
 ; DisplayULA:inst4|inst25~0                           ; 1       ;
 ; DisplayULA:inst4|inst30                             ; 1       ;
@@ -1119,9 +1119,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DisplayULA:inst4|inst28~0                           ; 1       ;
 ; DisplayULA:inst4|inst27~0                           ; 1       ;
 ; mux5:inst2|inst12~0                                 ; 1       ;
-; mux5:inst2|bloconovo:inst1|inst~0                   ; 1       ;
+; mux5:inst2|AndBitVector:inst1|inst~0                ; 1       ;
 ; subtracter:inst8|fulladder:inst2|adder:inst|inst5   ; 1       ;
-; mux5:inst2|bloconovo:inst1|inst2~0                  ; 1       ;
+; mux5:inst2|AndBitVector:inst1|inst2~0               ; 1       ;
 ; mux5:inst2|inst11~0                                 ; 1       ;
 ; mux3:inst|inst13~5                                  ; 1       ;
 ; mux3:inst|inst13~4                                  ; 1       ;
@@ -1391,7 +1391,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 18 14:28:09 2019
+    Info: Processing started: Wed May 01 20:27:16 2019
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off ULA -c ULA
 Info: Automatically selected device EP2S15F484C3 for design ULA
 Info: Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
@@ -1458,7 +1458,7 @@ Info: I/O bank details before I/O pin placement
         Info: I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  43 pins available
         Info: I/O bank number 9 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  6 pins available
         Info: I/O bank number 10 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  6 pins available
-Info: Fitter preparation operations ending: elapsed time is 00:00:01
+Info: Fitter preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
@@ -1497,7 +1497,7 @@ Info: Delay annotation completed successfully
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Quartus II Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 281 megabytes
-    Info: Processing ended: Thu Apr 18 14:28:12 2019
+    Info: Processing ended: Wed May 01 20:27:19 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
