@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA
-Thu Apr 04 12:59:51 2019
+Wed May 01 20:27:15 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Thu Apr 04 12:59:51 2019        ;
+; Analysis & Synthesis Status   ; Successful - Wed May 01 20:27:15 2019        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; ULA                                          ;
-; Top-level Entity Name         ; somador_subtracter                           ;
+; Top-level Entity Name         ; ULA                                          ;
 ; Family                        ; Stratix II                                   ;
 ; Logic utilization             ; N/A                                          ;
-;     Combinational ALUTs       ; 6                                            ;
+;     Combinational ALUTs       ; 35                                           ;
 ;     Dedicated logic registers ; 0                                            ;
 ; Total registers               ; 0                                            ;
-; Total pins                    ; 14                                           ;
+; Total pins                    ; 31                                           ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0                                            ;
 ; DSP block 9-bit elements      ; 0                                            ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; somador_subtracter ; ULA                ;
+; Top-level entity name                                                      ; ULA                ; ULA                ;
 ; Family name                                                                ; Stratix II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -138,32 +138,40 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     1 processor            ; 100.0%      ;
-;     2-4 processors         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                     ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+
-; adder.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/ProgramFiles/Altera/Quartus9/quartus/projetoSD/quartus/adder.bdf              ;
-; mux2.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/ProgramFiles/Altera/Quartus9/quartus/projetoSD/quartus/mux2.bdf               ;
-; somador_subtracter.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/ProgramFiles/Altera/Quartus9/quartus/projetoSD/quartus/somador_subtracter.bdf ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                          ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------+
+; adder.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/adder.bdf                ;
+; fulladder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/fulladder.bdf            ;
+; subtracter.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/subtracter.bdf           ;
+; C2B.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/C2B.bdf                  ;
+; AandB.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/AandB.bdf                ;
+; comparadorBitSignif.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/comparadorBitSignif.bdf  ;
+; comparadorBit-Bit.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/comparadorBit-Bit.bdf    ;
+; maiorQueDiferenciado.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/maiorQueDiferenciado.bdf ;
+; menorque.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/menorque.bdf             ;
+; igual.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/igual.bdf                ;
+; mux3.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/mux3.bdf                 ;
+; mux5.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/mux5.bdf                 ;
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/ULA.bdf                  ;
+; DisplayULA.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/DisplayULA.bdf           ;
+; Display2ULA.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/Display2ULA.bdf          ;
+; AxorB.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/AxorB.bdf                ;
+; AndBitVector.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/igors/OneDrive/Área de Trabalho/CC/2 Período/projetoSD/igor/quartus/AndBitVector.bdf         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -171,52 +179,64 @@ applicable agreement for further details.
 +-----------------------------------------------+-------+
 ; Resource                                      ; Usage ;
 +-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 6     ;
+; Estimated ALUTs Used                          ; 35    ;
 ; Dedicated logic registers                     ; 0     ;
 ;                                               ;       ;
-; Estimated ALUTs Unavailable                   ; 2     ;
+; Estimated ALUTs Unavailable                   ; 13    ;
 ;                                               ;       ;
-; Total combinational functions                 ; 6     ;
+; Total combinational functions                 ; 35    ;
 ; Combinational ALUT usage by number of inputs  ;       ;
-;     -- 7 input functions                      ; 0     ;
-;     -- 6 input functions                      ; 2     ;
-;     -- 5 input functions                      ; 2     ;
-;     -- 4 input functions                      ; 1     ;
-;     -- <=3 input functions                    ; 1     ;
+;     -- 7 input functions                      ; 1     ;
+;     -- 6 input functions                      ; 12    ;
+;     -- 5 input functions                      ; 4     ;
+;     -- 4 input functions                      ; 10    ;
+;     -- <=3 input functions                    ; 8     ;
 ;                                               ;       ;
 ; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 6     ;
-;     -- extended LUT mode                      ; 0     ;
+;     -- normal mode                            ; 34    ;
+;     -- extended LUT mode                      ; 1     ;
 ;     -- arithmetic mode                        ; 0     ;
 ;     -- shared arithmetic mode                 ; 0     ;
 ;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 8     ;
+; Estimated ALUT/register pairs used            ; 48    ;
 ;                                               ;       ;
 ; Total registers                               ; 0     ;
 ;     -- Dedicated logic registers              ; 0     ;
 ;     -- I/O registers                          ; 0     ;
 ;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 4     ;
+; Estimated ALMs:  partially or completely used ; 24    ;
 ;                                               ;       ;
-; I/O pins                                      ; 14    ;
-; Maximum fan-out node                          ; S     ;
-; Maximum fan-out                               ; 5     ;
-; Total fan-out                                 ; 33    ;
-; Average fan-out                               ; 1.65  ;
+; I/O pins                                      ; 31    ;
+; Maximum fan-out node                          ; B[0]  ;
+; Maximum fan-out                               ; 12    ;
+; Total fan-out                                 ; 174   ;
+; Average fan-out                               ; 2.64  ;
 +-----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                        ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------+--------------+
-; |somador_subtracter        ; 6 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 14   ; 0            ; |somador_subtracter              ; work         ;
-;    |adder:inst10|          ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |somador_subtracter|adder:inst10 ; work         ;
-;    |adder:inst11|          ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |somador_subtracter|adder:inst11 ; work         ;
-;    |adder:inst12|          ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |somador_subtracter|adder:inst12 ; work         ;
-;    |adder:inst9|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |somador_subtracter|adder:inst9  ;              ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                        ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                              ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------+--------------+
+; |ULA                       ; 35 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 31   ; 0            ; |ULA                                             ; work         ;
+;    |AandB:inst3|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|AandB:inst3                                 ; work         ;
+;    |DisplayULA:inst4|      ; 7 (7)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|DisplayULA:inst4                            ; work         ;
+;    |fulladder:inst10|      ; 3 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|fulladder:inst10                            ; work         ;
+;       |adder:inst2|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|fulladder:inst10|adder:inst2                ; work         ;
+;       |adder:inst3|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|fulladder:inst10|adder:inst3                ; work         ;
+;       |adder:inst|         ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|fulladder:inst10|adder:inst                 ; work         ;
+;    |mux3:inst14|           ; 3 (3)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|mux3:inst14                                 ;              ;
+;    |mux3:inst|             ; 6 (6)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|mux3:inst                                   ; work         ;
+;    |mux5:inst2|            ; 12 (8)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|mux5:inst2                                  ; work         ;
+;       |AndBitVector:inst1| ; 3 (3)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|mux5:inst2|AndBitVector:inst1               ; work         ;
+;       |AndBitVector:inst4| ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|mux5:inst2|AndBitVector:inst4               ; work         ;
+;    |subtracter:inst8|      ; 3 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|subtracter:inst8                            ; work         ;
+;       |C2B:inst|           ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|subtracter:inst8|C2B:inst                   ; work         ;
+;          |adder:inst8|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|subtracter:inst8|C2B:inst|adder:inst8       ; work         ;
+;       |fulladder:inst2|    ; 2 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|subtracter:inst8|fulladder:inst2            ; work         ;
+;          |adder:inst|      ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ULA|subtracter:inst8|fulladder:inst2|adder:inst ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -241,47 +261,78 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Apr 04 12:59:50 2019
+    Info: Processing started: Wed May 01 20:27:13 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
-Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file adder.bdf
     Info: Found entity 1: adder
 Info: Found 1 design units, including 1 entities, in source file fulladder.bdf
     Info: Found entity 1: fulladder
-Info: Found 1 design units, including 1 entities, in source file c2b.bdf
-    Info: Found entity 1: c2b
 Info: Found 1 design units, including 1 entities, in source file subtracter.bdf
     Info: Found entity 1: subtracter
+Info: Found 1 design units, including 1 entities, in source file c2b.bdf
+    Info: Found entity 1: C2B
 Info: Found 1 design units, including 1 entities, in source file aandb.bdf
     Info: Found entity 1: AandB
-Info: Found 1 design units, including 1 entities, in source file igual.bdf
-    Info: Found entity 1: igual
+Info: Found 1 design units, including 1 entities, in source file comparadorbitsignif.bdf
+    Info: Found entity 1: comparadorBitSignif
+Info: Found 1 design units, including 1 entities, in source file comparadorbit-bit.bdf
+    Info: Found entity 1: comparadorBit-Bit
+Info: Found 1 design units, including 1 entities, in source file maiorquediferenciado.bdf
+    Info: Found entity 1: maiorQueDiferenciado
 Info: Found 1 design units, including 1 entities, in source file menorque.bdf
     Info: Found entity 1: menorque
-Info: Found 1 design units, including 1 entities, in source file maiorque.bdf
-    Info: Found entity 1: maiorque
+Info: Found 1 design units, including 1 entities, in source file igual.bdf
+    Info: Found entity 1: igual
 Info: Found 1 design units, including 1 entities, in source file mux2.bdf
     Info: Found entity 1: mux2
-Info: Found 1 design units, including 1 entities, in source file somador_subtracter.bdf
-    Info: Found entity 1: somador_subtracter
-Info: Elaborating entity "somador_subtracter" for the top level hierarchy
-Warning: No superset bus at connection
-Info: Elaborating entity "adder" for hierarchy "adder:inst9"
-Info: Elaborating entity "mux2" for hierarchy "mux2:inst15"
-Warning: Ignored assignments for entity "ULA" -- entity does not exist in design
-    Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity ULA -section_id "Root Region" was ignored
-    Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity ULA -section_id "Root Region" was ignored
-Warning: Ignored assignments for entity "menorque" -- entity does not exist in design
-    Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity menorque -section_id "Root Region" was ignored
-    Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity menorque -section_id "Root Region" was ignored
-Info: Implemented 20 device resources after synthesis - the final resource count might be different
-    Info: Implemented 9 input pins
-    Info: Implemented 5 output pins
-    Info: Implemented 6 logic cells
+Info: Found 1 design units, including 1 entities, in source file mux3.bdf
+    Info: Found entity 1: mux3
+Info: Found 1 design units, including 1 entities, in source file mux5.bdf
+    Info: Found entity 1: mux5
+Info: Found 1 design units, including 1 entities, in source file ula.bdf
+    Info: Found entity 1: ULA
+Info: Found 1 design units, including 1 entities, in source file somadorbcd.bdf
+    Info: Found entity 1: somadorbcd
+Info: Found 1 design units, including 1 entities, in source file displayula.bdf
+    Info: Found entity 1: DisplayULA
+Info: Found 1 design units, including 1 entities, in source file display2ula.bdf
+    Info: Found entity 1: Display2ULA
+Info: Found 1 design units, including 1 entities, in source file axorb.bdf
+    Info: Found entity 1: AxorB
+Info: Found 1 design units, including 1 entities, in source file andbitvector.bdf
+    Info: Found entity 1: AndBitVector
+Info: Elaborating entity "ULA" for the top level hierarchy
+Info: Elaborating entity "mux3" for hierarchy "mux3:inst14"
+Info: Elaborating entity "fulladder" for hierarchy "fulladder:inst10"
+Info: Elaborating entity "adder" for hierarchy "fulladder:inst10|adder:inst2"
+Info: Elaborating entity "subtracter" for hierarchy "subtracter:inst8"
+Info: Elaborating entity "C2B" for hierarchy "subtracter:inst8|C2B:inst"
+Info: Elaborating entity "igual" for hierarchy "igual:inst9"
+Info: Elaborating entity "maiorQueDiferenciado" for hierarchy "maiorQueDiferenciado:inst1"
+Info: Elaborating entity "comparadorBitSignif" for hierarchy "maiorQueDiferenciado:inst1|comparadorBitSignif:inst10"
+Info: Elaborating entity "comparadorBit-Bit" for hierarchy "maiorQueDiferenciado:inst1|comparadorBit-Bit:inst2"
+Info: Elaborating entity "menorque" for hierarchy "menorque:inst12"
+Info: Elaborating entity "DisplayULA" for hierarchy "DisplayULA:inst4"
+Info: Elaborating entity "mux5" for hierarchy "mux5:inst2"
+Info: Elaborating entity "AndBitVector" for hierarchy "mux5:inst2|AndBitVector:inst8"
+Info: Elaborating entity "AandB" for hierarchy "AandB:inst3"
+Info: Elaborating entity "AxorB" for hierarchy "AxorB:inst6"
+Info: Elaborating entity "Display2ULA" for hierarchy "Display2ULA:inst5"
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "R[6]" is stuck at VCC
+    Warning (13410): Pin "R[5]" is stuck at VCC
+    Warning (13410): Pin "R[4]" is stuck at VCC
+    Warning (13410): Pin "R[3]" is stuck at VCC
+    Warning (13410): Pin "R[2]" is stuck at VCC
+    Warning (13410): Pin "R[1]" is stuck at VCC
+Info: Implemented 66 device resources after synthesis - the final resource count might be different
+    Info: Implemented 11 input pins
+    Info: Implemented 20 output pins
+    Info: Implemented 35 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 278 megabytes
-    Info: Processing ended: Thu Apr 04 12:59:51 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 240 megabytes
+    Info: Processing ended: Wed May 01 20:27:15 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
